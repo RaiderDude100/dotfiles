@@ -7,6 +7,32 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "disable_ai": true,
+  "use_system_window_tabs": false,
+  "bottom_dock_layout": "contained",
+  "tabs": {
+    "git_status": false,
+    "file_icons": true
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_branch_icon": false
+  },
+  "prettier": {
+    "allowed": false
+  },
+  "inlay_hints": {
+    "show_background": false,
+    "enabled": false
+  },
+  "indent_guides": {
+    "background_coloring": "indent_aware",
+    "coloring": "indent_aware"
+  },
+  "scrollbar": {
+    "diagnostics": "all"
+  },
+  "buffer_line_height": "comfortable",
   "icon_theme": "Material Icon Theme",
   "buffer_font_family": ".ZedMono",
   "project_panel": {
@@ -17,11 +43,7 @@
     "metrics": false
   },
   "ui_font_size": 16,
-  "theme": {
-    "mode": "dark",
-    "light": "Ayu Dark",
-    "dark": "Wallust"
-  },
+  "theme": "Wallust",
   "lsp": {
     "basedpyright": {
       "settings": {

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-MENU="Animation Switcher|GTK Settings|Qt5 Settings|Qt6 Settings|Hyprlock Theme Switcher"
+MENU="Animation Switcher|Theme Switcher|Hyprlock Theme Switcher|GTK Settings|Qt5 Settings|Qt6 Settings"
 DIALOG_RESULT=$(echo $MENU | rofi -sep "|" -dmenu -i -p "System Configuration" -hide-scrollbar -tokenize -lines 6 -width 50 -padding 50 -disable-history)
 
 echo "This result is : $DIALOG_RESULT"
@@ -25,8 +25,11 @@ then
 elif [ "$DIALOG_RESULT" = "Hyprlock Theme Switcher" ];
 then
 	exec ~/.config/hypr/scripts/switch-hyprlock-theme.sh
-
-
+	
+elif [ "$DIALOG_RESULT" = "Theme Switcher" ];
+then
+	exec ~/.config/hypr/scripts/switch-theme.sh
+	
 fi
 
 
