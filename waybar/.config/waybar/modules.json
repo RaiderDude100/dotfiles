@@ -73,4 +73,12 @@
  "memory": {
     "format": "Mem: {percentage}%"
  },
+ "custom/launcher-aero": {
+  	"format": "{icon}",
+  	"interval": 0,
+  	"tooltip-format": "Left-Click: App Launcher\nRight-Click: See all keybinds",
+  	"on-click": "rofi -show drun -show-icons -icon-theme 'kora'",
+  	"on-click-right": "~/.config/hypr/scripts/keybind.sh",
+  	"format-icons": ["󰨡"]
+  },
 }
