@@ -3,13 +3,13 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "JetBrainsMono Nerd Font Propo";
     border-radius: 20px;
+    font-size: 13px;
     margin: 2px;
 }
 
 tooltip {
     background-color: @surface;
     color: @primary;
-    font-size: 13px;
     font-weight: bold;
     border-width: 2px;
     border-color: @secondary;
@@ -18,7 +18,6 @@ tooltip {
 window#waybar {
     background-color: transparent;
     color: @primary;
-    font-size: 13px;
     font-weight: bold;
 }
 
@@ -41,8 +40,8 @@ window#waybar.empty #window {
 
 #workspaces button.active {
     background-color: @primary;
-    font-size: 14.5px;
-    padding: 0px 12px;
+    padding: 0px 10px;
+    border-radius: 25px;
     color: @surface;
 }
 
