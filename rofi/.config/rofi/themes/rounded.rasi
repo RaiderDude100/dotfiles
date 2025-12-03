@@ -1,6 +1,6 @@
 @import '~/.config/rofi/colors.rasi'
 * {
-    font:   "JetBrainsMono Nerd Font 12";
+    font:   "Lilex Nerd Font 12";
 
     background-color:   transparent;
     text-color:         @secondary;

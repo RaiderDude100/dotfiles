@@ -11,7 +11,7 @@ for cmd in fzf bat vim; do
 done
 
 # Run fzf with bat preview
-FILE=$(fzf --preview 'bat --style=numbers --color=always --line-range :500 {}' --height=80% --border)
+FILE=$(fzf --algo=v1 -e --preview 'bat --style=numbers --color=always --line-range :500 {}' --height=80% --border)
 
 # If a file was selected, open it in vim
 if [[ -n "$FILE" ]]; then
