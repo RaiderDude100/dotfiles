@@ -12,7 +12,6 @@ post_hook = '~/.config/hypr/scripts/reload.sh'
 [templates.swaync]
 input_path = '~/.config/matugen/templates/colors.css'
 output_path = '~/.config/swaync/colors.css'
-post_hook = 'killall -9 swaync'
 
 [templates.hyprland]
 input_path = '~/.config/matugen/templates/hyprland-colors.conf'
@@ -38,7 +37,3 @@ output_path = '~/.config/qt6ct/colors/matugen.conf'
 [templates.btop]
 input_path = '~/.config/matugen/templates/btop.theme'
 output_path = '~/.config/btop/themes/matugen.theme'
-
-[templates.walker]
-input_path = '~/.config/matugen/templates/colors.css'
-output_path = '~/.config/walker/colors.css'

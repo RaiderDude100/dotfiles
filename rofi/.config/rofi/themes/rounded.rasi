@@ -77,8 +77,8 @@ element alternate active {
 }
 
 element selected normal, element selected active {
-    background-color:   @inverse-primary;
-    text-color: @tertiary;
+    background-color:   @primary;
+    text-color: @on-primary;
 }
 
 element-icon {
