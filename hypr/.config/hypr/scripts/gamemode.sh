@@ -9,7 +9,9 @@ if [ "$HYPRGAMEMODE" = 1 ] ; then
         keyword decoration:blur:enabled 0;\
         keyword general:gaps_in 0;\
         keyword general:gaps_out 0;\
-        keyword general:border_size 0;\
+        keyword general:border_size 2;\
+        keyword general:col.active_border rgba(ffffffff);\
+        keyword general:col.inactive_border rgba(00000000);\
         keyword decoration:rounding 0"
     exit
     notify-send -e "Gamemode Activated"
