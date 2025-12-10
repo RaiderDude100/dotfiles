@@ -11,8 +11,8 @@ else
     echo "Directory already exists: $ICON_DIR"
 fi
 
-mv kora "$ICON_DIR/"
-mv Bibata-Modern-Ice "$ICON_DIR/"
+cp kora "$ICON_DIR/"
+cp Bibata-Modern-Ice "$ICON_DIR/"
 
 echo "Theme files copied"
 exit 0
