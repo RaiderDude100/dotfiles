@@ -51,12 +51,13 @@
   	"format-icons": ["󰐥"]
   },
   "custom/updates": {
-    "exec": "~/.config/hypr/scripts/update-checker.sh",
-    "interval": 1800,
-    "tooltip-format": "Left-Click: Update System\nRight-Click: Pacseek",
-    "on-click": "kitty -e ~/.config/hypr/scripts/updates.sh",
-    "on-click-right": "kitty -e pacseek"
- },
+  "exec": "/bin/bash -c '$HOME/.config/hypr/scripts/update-checker.sh'",
+  "interval": 1800,
+  "return-type": "json",
+  "on-click": "kitty -e ~/.config/hypr/scripts/updates.sh",
+  "on-click-right": "kitty -e pacseek"
+  },
+
  "custom/sep": {
     "format": "|",
     "interval": 0,

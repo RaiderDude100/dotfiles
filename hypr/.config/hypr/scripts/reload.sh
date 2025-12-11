@@ -2,8 +2,8 @@
 
 # Restart waybar
 pkill waybar
-waybar &
-
 pkill swaync
+pkill thunar
+waybar &
 swaync &
-
+thunar --daemon &
