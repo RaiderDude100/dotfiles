@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# Restart waybar
-pkill waybar
-pkill swaync
-pkill thunar
-waybar &
-swaync &
-thunar --daemon &
+pkill waybar # Kill waybar
+pkill swaync # Kill swaync
+waybar & # Start waybar
+swaync & # Start swaync

@@ -9,7 +9,7 @@
 window {
     location:       center;
     width:          60%;
-    height: 75%;
+    height:         75%;
     border-radius:  20px;
     background-color:   @surface;
 }
@@ -55,7 +55,6 @@ listview {
     background-color:   transparent;
 
     margin:     12px 0 0;
-    lines:      8;
     columns:    1;
 
     padding-left: 12px;
