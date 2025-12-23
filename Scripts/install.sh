@@ -4,11 +4,7 @@ set -e
 
 cd "$(dirname "$0")"
 
-cd Theme
-chmod +x theme.sh
-./theme.sh
-
-cd ../Install
+cd Install
 chmod +x install-yay.sh install-chaotic-aur.sh install-themeing.sh install-utilities.sh install-flatpaks.sh
 ./install-yay.sh
 sudo ./install-chaotic-aur.sh
