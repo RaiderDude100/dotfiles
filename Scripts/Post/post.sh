@@ -46,6 +46,13 @@ if [ ! -d "$ZSH_CUSTOM/plugins/fast-syntax-highlighting" ]; then
 fi
 
 yay -Syu
+
+# --- Firewall ---
+sudo systemctl enable --now ufw
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw enable
+
 echo "Post installation scripts finished. Rebooting..."
 
 sleep 3
