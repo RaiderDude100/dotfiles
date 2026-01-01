@@ -6,8 +6,8 @@ status="$(systemctl status mariadb.service | grep "running")"
 # Compare status and act accordingly
 if [[ "$status" == '' ]]; then
     systemctl start mariadb.service
-    mariadb --password=matrix
+    mariadb --password
 else
-    mariadb --password=matrix
+    mariadb --password
 fi
 
