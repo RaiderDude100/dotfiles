@@ -40,6 +40,7 @@ eval "$(zoxide init zsh --cmd cd)"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 export EDITOR="vim"
+export MANPAGER="vim -M +MANPAGER --not-a-term -"
 
 # Load Oh My Zsh last
 source $ZSH/oh-my-zsh.sh
