@@ -62,6 +62,8 @@ sudo ufw enable
 
 yay -Syu
 
+tldr --update
+
 echo "Post installation scripts finished. Rebooting..."
 
 sleep 3
