@@ -45,13 +45,22 @@ if [ ! -d "$ZSH_CUSTOM/plugins/fast-syntax-highlighting" ]; then
     "$ZSH_CUSTOM/plugins/fast-syntax-highlighting"
 fi
 
-yay -Syu
+# --- Cloudflare Warp ---
+sudo systemctl enable --now warp-svc
+warp-cli registration new
+warp-cli mode warp+doh
+warp-cli connect
+warp-cli status
 
 # --- Firewall ---
 sudo systemctl enable --now ufw
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
+sudo ufw allow in on CloudflareWARP
+sudo ufw allow out on CloudflareWARP
 sudo ufw enable
+
+yay -Syu
 
 echo "Post installation scripts finished. Rebooting..."
 
