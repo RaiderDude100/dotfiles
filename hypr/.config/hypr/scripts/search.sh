@@ -1,21 +1,11 @@
-#!/bin/bash
-
-# Description: Fuzzy find files using fzf with bat preview, open in vim
-
-# Check if fzf, bat, and vim are installed
-for cmd in fzf bat vim; do
-    if ! command -v "$cmd" &> /dev/null; then
-        echo "Error: '$cmd' is not installed. Please install it and try again."
-        exit 1
-    fi
-done
+#!/bin/sh
 
 # Run fzf with bat preview
-FILE=$(fzf --algo=v1 -e --preview 'bat --style=numbers --color=always --line-range :500 {}' --height=80% --border)
+FILE=$(fzf --algo=v1 -e --preview 'bat --style=numbers --color=always --line-range :500 {}')
 
 # If a file was selected, open it in vim
 if [[ -n "$FILE" ]]; then
-    vim "$FILE"
+    nvim "$FILE"
 else
     echo "No file selected."
 fi
