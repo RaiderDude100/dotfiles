@@ -3,9 +3,9 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "Lilex Nerd Font Propo";
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 15px;
     margin: 2px;
-    border-width: 2px;
+    border-width: 0px;
 }
 
 tooltip {

@@ -1,4 +1,4 @@
-MENU="Default|Minimal"
+MENU="Default|Default-Borderless|Minimal"
 
 DIALOG_RESULT=$(echo $MENU | rofi -sep "|" -dmenu -i -p "Select Theme" -hide-scrollbar -tokenize -lines 5 -width 50 -padding 50 -disable-history)
 
@@ -8,6 +8,10 @@ sleep 1;
 if [ "$DIALOG_RESULT" = "Default" ];
 then
 	exec ~/.config/hypr/scripts/default-theme.sh
+
+elif [ "$DIALOG_RESULT" = "Default-Borderless" ];
+then
+	exec ~/.config/hypr/scripts/default-borderless-theme.sh
 
 elif [ "$DIALOG_RESULT" = "Minimal" ];
 then

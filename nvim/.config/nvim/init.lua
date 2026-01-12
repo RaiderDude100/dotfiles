@@ -193,7 +193,7 @@ require("lazy").setup({
 -------------------------------------------------
 vim.keymap.set("n", "<F5>", function()
   vim.cmd("w")
-  vim.cmd("split | terminal python3 %")
+  vim.cmd("split | terminal python3 '%'")
 end)
 
 -------------------------------------------------
