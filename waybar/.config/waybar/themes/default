@@ -12,7 +12,7 @@
 		"*": 5
     	},
         "sort-by": "number",
-        "all-outputs": false
+        "all-outputs": false,
     },
     
     "hyprland/window": {
@@ -38,7 +38,7 @@
         "format-ethernet": "󰈀 Ethernet",
         "tooltip-format": "{ifname}/{essid} via {gwaddr}",
         "format-disconnected": "󰌙 Disconnected",
-        "max-length": 8,
+        "max-length": 12,
         "on-click": "kitty -e nmtui",
     },
     "pulseaudio": {
