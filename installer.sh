@@ -4,8 +4,6 @@ FOLDER_PATH="$HOME/dotfiles"
 CACHE_PATH="$HOME/.cache"
 VERSION="$HOME/dotfiles/version"
 
-cd "$HOME"
-
 if [ -d "$FOLDER_PATH" ]; then
   echo "Dotfiles folder exists"
   cd "$CACHE_PATH"
@@ -15,9 +13,9 @@ if [ -d "$FOLDER_PATH" ]; then
       echo "Up to date"
     else
       echo "Downloading update"
-      cd "$CACHE_PATH"
-      git clone https://github.com/RaiderDude100/dotfiles.git 
-      mv dotfiles .dotfiles_backup_pre$(cat "$CACHE_PATH/version")
+      mkdir "$CACHE_PATH/dotfiles"
+      git clone https://github.com/RaiderDude100/dotfiles.git "$CACHE_PATH/dotfiles"
+      mv "$FOLDER_PATH" "$HOME/.dotfiles_backup_pre$(cat "$CACHE_PATH/version")"
       mv "$CACHE_PATH/dotfiles" "$FOLDER_PATH"
       cd "$FOLDER_PATH"
       stow --override=".*" btop fastfetch gamemode gtk-2 gtk-3 gtk-4 hypr kitty matugen nwg-look qt5ct qt6ct rofi swaync vim wallust waybar zed zsh wallpaper waypaper
@@ -31,6 +29,7 @@ if [ -d "$FOLDER_PATH" ]; then
   fi
 else
   echo "Downloading from GitHub"
+  cd "$HOME"
   git clone https://github.com/RaiderDude100/dotfiles.git
   cd "$FOLDER_PATH/Scripts"
   ./install.sh
