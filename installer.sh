@@ -10,7 +10,7 @@ if [ -d "$FOLDER_PATH" ]; then
   echo "Dotfiles folder exists"
   cd "$CACHE_PATH"
   curl -L -o version https://raw.githubusercontent.com/RaiderDude100/dotfiles/main/version
-  function update {-
+  function update {
     if diff "$VERSION" "$CACHE_PATH/version"; then
       echo "Up to date"
     else
