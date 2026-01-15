@@ -4,15 +4,8 @@ set -e
 
 cd "$(dirname "$0")"
 
-echo "Checking for updates before installation..."
-cd ..
+cd Install
 
-if [ -f "update.sh" ] && [ "$1" != "--skip-update" ]; then
-    echo "Running update check..."
-    ./update.sh --no-install
-fi
-
-cd Scripts/Install
 chmod +x install-yay.sh install-chaotic-aur.sh install-themeing.sh install-utilities.sh install-flatpaks.sh
 ./install-yay.sh
 sudo ./install-chaotic-aur.sh
