@@ -15,6 +15,7 @@ if [ -d "$FOLDER_PATH" ]; then
       echo "Up to date"
     else
       echo "Downloading update"
+      cd "$CACHE_PATH"
       git clone https://github.com/RaiderDude100/dotfiles.git 
       mv dotfiles .dotfiles_backup_pre$(cat "$CACHE_PATH/version")
       mv "$CACHE_PATH/dotfiles" "$FOLDER_PATH"
