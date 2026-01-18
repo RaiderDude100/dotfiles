@@ -193,7 +193,40 @@ require("lazy").setup({
 -------------------------------------------------
 vim.keymap.set("n", "<F5>", function()
   vim.cmd("w")
-  vim.cmd("split | terminal python3 '%'")
+  local file = vim.fn.expand("%")
+  local ext = vim.fn.expand("%:e")
+  
+  if ext == "py" then
+    vim.cmd("split | terminal python3 '" .. file .. "'")
+  elseif ext == "js" then
+    vim.cmd("split | terminal node '" .. file .. "'")
+  elseif ext == "sh" or ext == "bash" then
+    vim.cmd("split | terminal bash '" .. file .. "'")
+  elseif ext == "rb" then
+    vim.cmd("split | terminal ruby '" .. file .. "'")
+  elseif ext == "pl" then
+    vim.cmd("split | terminal perl '" .. file .. "'")
+  elseif ext == "php" then
+    vim.cmd("split | terminal php '" .. file .. "'")
+  elseif ext == "go" then
+    vim.cmd("split | terminal go run '" .. file .. "'")
+  elseif ext == "rs" then
+    vim.cmd("split | terminal cargo run")
+  elseif ext == "java" then
+    vim.cmd("split | terminal java '" .. file .. "'")
+  elseif ext == "c" then
+    local out = vim.fn.expand("%:r")
+    vim.cmd("split | terminal gcc '" .. file .. "' -o '" .. out .. "' && ./'" .. out .. "'")
+  elseif ext == "cpp" or ext == "cc" then
+    local out = vim.fn.expand("%:r")
+    vim.cmd("split | terminal g++ '" .. file .. "' -o '" .. out .. "' && ./'" .. out .. "'")
+  elseif ext == "html" then
+    vim.cmd("split | terminal xdg-open '" .. file .. "'")
+  elseif ext == "md" then
+    vim.cmd("split | terminal glow '" .. file .. "'")
+  else
+    vim.cmd("split | terminal xdg-open '" .. file .. "'")
+  end
 end)
 
 -------------------------------------------------
