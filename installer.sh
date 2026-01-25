@@ -3,6 +3,7 @@
 FOLDER_PATH="$HOME/dotfiles"
 CACHE_PATH="$HOME/.cache"
 VERSION="$HOME/dotfiles/version"
+INSTALLED="$HOME/dotfiles/installed"
 
 if [ -d "$FOLDER_PATH" ]; then
   echo "Dotfiles folder exists"
@@ -18,12 +19,12 @@ if [ -d "$FOLDER_PATH" ]; then
       mv "$FOLDER_PATH" "$HOME/.dotfiles_backup_pre$(cat "$CACHE_PATH/version")"
       mv "$CACHE_PATH/dotfiles" "$FOLDER_PATH"
       cd "$FOLDER_PATH"
-      stow --override=".*" btop fastfetch gamemode gtk-2 gtk-3 gtk-4 hypr kitty matugen nwg-look qt5ct qt6ct rofi swaync vim wallust waybar zed zsh wallpaper waypaper
+      stow --override=".*" btop fastfetch gamemode gtk-2 gtk-3 gtk-4 hypr kitty matugen nwg-look qt5ct qt6ct rofi swaync vim wallust waybar zed zsh wallpaper waypaper nvim
     fi
   }
-  if [ ! -f "$VERSION" ]; then
-    touch "$VERSION"
-    update
+  if [ ! -f "$INSTALLED" ]; then
+    cd "$FOLDER_PATH/Scripts"
+    ./install.sh
   else
     update
   fi

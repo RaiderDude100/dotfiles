@@ -16,6 +16,7 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
 gsettings set org.gnome.desktop.interface icon-theme "kora"
 gsettings set org.gnome.desktop.interface cursor-theme "Bibata-Modern-Ice"
+gsettings set org.gnome.desktop.wm.preferences button-layout ''
 
 # --- Oh My Zsh unattended install ---
 export RUNZSH=no
@@ -63,6 +64,9 @@ sudo ufw enable
 yay -Syu
 
 tldr --update
+
+cd "$HOME/dotfiles"
+touch installed
 
 echo "Post installation scripts finished. Rebooting..."
 
