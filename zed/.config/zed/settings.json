@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "session": {
+    "trust_all_worktrees": true
+  },
   "disable_ai": true,
   "use_system_window_tabs": false,
   "bottom_dock_layout": "contained",
@@ -33,7 +36,11 @@
     "diagnostics": "all"
   },
   "buffer_line_height": "comfortable",
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme"
+  },
   "buffer_font_family": ".ZedMono",
   "project_panel": {
     "dock": "right"
@@ -43,7 +50,11 @@
     "metrics": false
   },
   "ui_font_size": 16,
-  "theme": "Wallust",
+  "theme": {
+    "mode": "dark",
+    "light": "Wallust",
+    "dark": "Wallust"
+  },
   "lsp": {
     "basedpyright": {
       "settings": {

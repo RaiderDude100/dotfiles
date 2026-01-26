@@ -7,7 +7,6 @@ echo "@import 'themes/default.css';" > ~/.config/waybar/style.css
 echo "@import 'themes/default.css';" > ~/.config/swaync/style.css
 echo "@import 'themes/bordered.css';" > ~/.config/gtk-3.0/gtk.css
 echo "@import 'themes/bordered.css';" > ~/.config/gtk-4.0/gtk.css
-echo "@import 'themes/bordered.css';" > ~/.config/gtk-4.0/gtk-dark.css
 ~/.config/hypr/scripts/reload.sh
 pkill swaync
 echo "@theme \"~/.config/rofi/themes/rounded.rasi\"" > ~/.config/rofi/config.rasi
