@@ -4,6 +4,7 @@ echo -e "{\n    "\"include\"": [\n    "\"~/.config/waybar/themes/default\""\n   
 echo "source = ~/.config/hypr/conf/look_feel/default-borderless.conf" > ~/.config/hypr/conf/look_feel.conf
 echo "source = ~/.config/hypr/conf/animations/default.conf" > ~/.config/hypr/conf/animations.conf
 echo "@import 'themes/default-borderless.css';" > ~/.config/waybar/style.css
+echo "@import 'themes/osd-default-borderless.css';" > ~/.config/waybar/osd.css
 echo "@import 'themes/default-borderless.css';" > ~/.config/swaync/style.css
 echo "@import 'themes/borderless.css';" > ~/.config/gtk-3.0/gtk.css
 echo "@import 'themes/borderless.css';" > ~/.config/gtk-4.0/gtk.css

@@ -4,6 +4,7 @@ echo -e "{\n    "\"include\"": [\n    "\"~/.config/waybar/themes/minimal\""\n   
 echo "source = ~/.config/hypr/conf/look_feel/minimal.conf" > ~/.config/hypr/conf/look_feel.conf
 echo "source = ~/.config/hypr/conf/animations/none.conf" > ~/.config/hypr/conf/animations.conf
 echo "@import 'themes/minimal.css';" > ~/.config/waybar/style.css
+echo "@import 'themes/osd-minimal.css';" > ~/.config/waybar/osd.css
 echo "@import 'themes/default.css';" > ~/.config/swaync/style.css
 echo "@import 'themes/bordered.css';" > ~/.config/gtk-3.0/gtk.css
 echo "@import 'themes/bordered.css';" > ~/.config/gtk-4.0/gtk.css
