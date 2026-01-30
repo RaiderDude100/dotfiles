@@ -1,5 +1,4 @@
 #!/bin/bash
-# rofi-hyprland-window-switcher.sh
 
 # Get all windows with workspace ID and title using hyprctl
 windows=$(hyprctl clients -j | jq -r '.[] | "\(.workspace.id) — \(.title)"')

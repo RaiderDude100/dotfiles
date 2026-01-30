@@ -7,12 +7,12 @@ if [[ "$MUTE" == "yes" ]]; then
   ICON="󰝟"
   TEXT="Muted"
 else
-  if (( VOL < 30 )); then
-    ICON="󰕿"
+  if (( VOL < 20 )); then
+    ICON=""
   elif (( VOL < 70 )); then
-    ICON="󰖀"
+    ICON=""
   else
-    ICON="󰕾"
+    ICON=""
   fi
   TEXT="${VOL}%"
 fi
