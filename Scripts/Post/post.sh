@@ -6,17 +6,17 @@ HOME_DIR="$HOME"
 
 # --- System setup ---
 sudo usermod -aG gamemode "$USER_NAME"
-
+sudo auto-cpufreq --install
 sudo reflector --latest 10 --sort rate --protocol https --save /etc/pacman.d/mirrorlist
 
 # --- Desktop theming ---
-waypaper --random
-
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
 gsettings set org.gnome.desktop.interface icon-theme "kora"
 gsettings set org.gnome.desktop.interface cursor-theme "Bibata-Modern-Ice"
 gsettings set org.gnome.desktop.wm.preferences button-layout ''
+
+waypaper --random
 
 # --- Oh My Zsh unattended install ---
 export RUNZSH=no
@@ -27,7 +27,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # --- Set zsh as default shell ---
 ZSH_PATH="$(command -v zsh)"
-sudo chsh -s "$ZSH_PATH" "$USER_NAME"
+
 
 # --- Oh My Zsh custom paths ---
 ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME_DIR/.oh-my-zsh/custom}"
@@ -48,6 +48,7 @@ fi
 
 # --- Cloudflare Warp ---
 sudo systemctl enable --now warp-svc
+sudo systemctl start warp-svc
 warp-cli registration new
 warp-cli mode warp+doh
 warp-cli connect
