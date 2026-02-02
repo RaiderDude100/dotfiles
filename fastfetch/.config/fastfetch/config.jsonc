@@ -76,6 +76,10 @@
 			"type": "cpu",
 			"showPeCoreCount": true
 		},
+        {
+			"key": "│             │\u001b[13D{#33}󰢮 gpu",
+			"type": "gpu"
+		},
 		{
 			"key": "│             │\u001b[13D{#34}󰉉 disk",
 			"type": "disk",
