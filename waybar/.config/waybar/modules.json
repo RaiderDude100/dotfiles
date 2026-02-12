@@ -51,7 +51,7 @@
   	"format-icons": ["󰐥"]
   },
   "custom/updates": {
-  "exec": "/bin/bash -c '$HOME/.config/hypr/scripts/update-checker.sh'",
+  "exec": "~/.config/hypr/scripts/update-checker.sh",
   "interval": 1800,
   "return-type": "json",
   "on-click": "kitty -e ~/.config/hypr/scripts/updates.sh",

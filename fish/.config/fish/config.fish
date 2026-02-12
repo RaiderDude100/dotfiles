@@ -7,9 +7,9 @@ set -gx VISUAL nvim
 set -gx PAGER less
 
 # Aliases
-abbr -a ls 'eza --icons -lh'
-abbr -a mysql '~/.config/hypr/scripts/mysql.sh'
-abbr -a cp 'rsync -a --info=progress2'
-alias cd=z
+alias ls='eza --icons -lha'
+alias mysql='~/.config/hypr/scripts/mysql.sh'
+alias cp='rsync -a --info=progress2'
 zoxide init fish | source
+alias cd=z
 

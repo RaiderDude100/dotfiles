@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Pure Bash Waybar update checker with JSON-safe escaping
 
 set -o errexit
 set -o nounset
@@ -24,7 +23,7 @@ safe_run() {
 }
 
 # ----- Collect pacman updates -----
-pacman_list="$(safe_run checkupdates checkupdates)"
+pacman_list="$(safe_run yay -Qu yay -Qu)"
 pacman_clean="$(printf "%s\n" "$pacman_list" | sed '/^\s*$/d')"
 pacman_count="$(printf "%s\n" "$pacman_clean" | grep -cve '^\s*$' || true)"
 pacman_count="${pacman_count:-0}"
