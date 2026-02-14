@@ -50,3 +50,7 @@ output_path = '~/.config/Kvantum/matugen/matugen.kvconfig'
 [templates.kvantum_svg]
 input_path = '~/.config/matugen/templates/kvantum-colors.svg'
 output_path = '~/.config/Kvantum/matugen/matugen.svg'
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty-colors.conf'
+output_path = '~/.config/kitty/colors-matugen.conf'

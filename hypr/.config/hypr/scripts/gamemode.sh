@@ -1,23 +1,21 @@
 !/usr/bin/env sh
-HYPRGAMEMODE=$(hyprctl getoption animations:enabled | awk 'NR==1{print $2}')
-if [ "$HYPRGAMEMODE" = 1 ] ; then
+HYPRGAMEMODE=$(cat ~/.config/hypr/vars/gamemode)
+CURRENT_THEME=$(cat ~/.config/hypr/vars/theme)
+CURRENT_ANIMATIONS=$(cat ~/.config/hypr/vars/animations)
+if [ "$HYPRGAMEMODE" == "off" ] ; then
     pkill waybar &
     pkill hypridle &
-    hyprctl --batch "\
-        keyword animations:enabled 0;\
-        keyword decoration:shadow:enabled 0;\
-        keyword decoration:blur:enabled 0;\
-        keyword general:gaps_in 0;\
-        keyword general:gaps_out 0;\
-        keyword general:border_size 2;\
-        keyword general:col.active_border rgba(ffffffff);\
-        keyword general:col.inactive_border rgba(00000000);\
-        keyword decoration:rounding 0"
-    exit
+    echo "source = ~/.config/hypr/conf/look_feel/minimal.conf" > ~/.config/hypr/conf/look_feel.conf
+    echo "source = ~/.config/hypr/conf/animations/none.conf" > ~/.config/hypr/conf/animations.conf
+    echo "on" > ~/.config/hypr/vars/gamemode
     notify-send -e "Gamemode Activated"
+    exit
 fi
     hypridle &
     waybar &
+    echo "off" > ~/.config/hypr/vars/gamemode
+    echo "source = ~/.config/hypr/conf/look_feel/$CURRENT_THEME.conf" > ~/.config/hypr/conf/look_feel.conf
+    echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATIONS.conf" > ~/.config/hypr/conf/animations.conf
     notify-send -e "Gamemode Deactivated"
     hyprctl reload
 exit

@@ -5,15 +5,15 @@ DIALOG_RESULT=$(echo $MENU | rofi -sep "|" -dmenu -i -p "Select Theme" -hide-scr
 echo "This result is : $DIALOG_RESULT"
 sleep 1;
 
-if [ "$DIALOG_RESULT" = "Default" ];
-then
-	exec ~/.config/hypr/scripts/default-theme.sh
+if [ "$DIALOG_RESULT" = "Default" ];then
+    echo "default" > ~/.config/hypr/vars/theme
+    exec ~/.config/hypr/scripts/default-theme.sh
 
-elif [ "$DIALOG_RESULT" = "Default-Borderless" ];
-then
+elif [ "$DIALOG_RESULT" = "Default-Borderless" ];then
+    echo "default-borderless" > ~/.config/hypr/vars/theme
 	exec ~/.config/hypr/scripts/default-borderless-theme.sh
 
-elif [ "$DIALOG_RESULT" = "Minimal" ];
-then
+elif [ "$DIALOG_RESULT" = "Minimal" ];then
+    echo "minimal" > ~/.config/hypr/vars/theme
 	exec ~/.config/hypr/scripts/minimal-theme.sh
 fi
