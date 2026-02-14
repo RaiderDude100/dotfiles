@@ -12,7 +12,7 @@ while true; do
         hyprsunset -t "$TEMPERATURE"
     else
         # Reset to normal temperature
-        killall -9 hyprsunset
+        pkill hyprsunset
     fi
     
     sleep $CHECK_INTERVAL
