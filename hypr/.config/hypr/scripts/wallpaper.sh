@@ -4,7 +4,7 @@
 wallpaper="$1"
 
 # Use matugen to generate material colors
-matugen image $wallpaper
+matugen -t scheme-content image $wallpaper
 
 # Use wallust to generate terminal colors
 wallust run $wallpaper
