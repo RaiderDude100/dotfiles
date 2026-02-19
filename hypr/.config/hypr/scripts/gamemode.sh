@@ -13,6 +13,7 @@ if [ "$HYPRGAMEMODE" == "off" ] ; then
 fi
     hypridle &
     waybar &
+    waybar -c ~/.config/waybar/osd.jsonc -s ~/.config/waybar/osd.css &
     echo "off" > ~/.config/hypr/vars/gamemode
     echo "source = ~/.config/hypr/conf/look_feel/$CURRENT_THEME.conf" > ~/.config/hypr/conf/look_feel.conf
     echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATIONS.conf" > ~/.config/hypr/conf/animations.conf

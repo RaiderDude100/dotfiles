@@ -9,7 +9,7 @@ window#waybar {
   border-style: solid;
   border-width: 2px;
   border-color: white;
-  border-radius: 20px;
+  border-radius: 0px;
   padding: 10px 18px;
   margin: 5px;
   font-weight: bold;

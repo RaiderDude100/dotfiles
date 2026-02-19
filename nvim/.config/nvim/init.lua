@@ -76,27 +76,12 @@ require("lazy").setup({
   -- FILE EXPLORER
   -------------------------------------------------
   {
-    "nvim-tree/nvim-tree.lua",
-    dependencies = {
-      "nvim-tree/nvim-web-devicons",
-    },
-    config = function()
-      require("nvim-tree").setup({
-        respect_buf_cwd = true,
-        sync_root_with_cwd = true,
-        update_focused_file = {
-          enable = true,
-          update_root = true,
-        },
-      })
-
       vim.keymap.set(
         "n",
         "<leader>e",
-        ":NvimTreeToggle<CR>",
+        ":Ex<CR>",
         { silent = true }
       )
-    end,
   },
 
 

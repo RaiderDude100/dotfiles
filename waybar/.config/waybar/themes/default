@@ -50,11 +50,6 @@
         },
         "on-click": "pavucontrol"
     },
-    "pulseaudio/slider": {
-    	"min": 0,
-    	"max": 100,
-    	"orientation": "horizontal"
-    },
     "group/trays": {
     	"orientation": "horizontal",
     	"modules": ["clock","custom/gap","custom/notification","tray"],

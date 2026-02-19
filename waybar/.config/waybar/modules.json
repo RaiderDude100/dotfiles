@@ -7,13 +7,13 @@
         "<span>󰂚</span>",
       "none": "󰂚",
       "dnd-notification":
-        "<span></span>",
+        "<span>󰂚</span>",
       "dnd-none": "󰂛",
       "inhibited-notification":
-        "<span></span>",
+        "<span>󰂚</span>",
       "inhibited-none": "󰂚",
       "dnd-inhibited-notification":
-        "<span></span>",
+        "<span>󰂚</span>",
       "dnd-inhibited-none": "󰂛"
     },
     "return-type": "json",
@@ -30,7 +30,7 @@
     "format-plugged": "󰚥 {capacity}%",
     "format-alt": "{icon} {time}",
     "format-time": "{H}:{m}",
-    "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
+    "format-icons": ["󰂎","󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
   },
   
   "custom/launcher": {
