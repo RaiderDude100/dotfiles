@@ -1,4 +1,5 @@
-!/usr/bin/env sh
+#!/usr/bin/env sh
+
 HYPRGAMEMODE=$(cat ~/.config/hypr/vars/gamemode)
 CURRENT_THEME=$(cat ~/.config/hypr/vars/theme)
 CURRENT_ANIMATIONS=$(cat ~/.config/hypr/vars/animations)
