@@ -36,15 +36,15 @@
   "custom/launcher": {
   "format": "󰣇",
   "tooltip-format": "Left-Click: App Launcher\nRight-Click: See all keybinds",
-  "on-click": "rofi -show drun -show-icons -icon-theme 'Papirus'",
-  "on-click-right": "~/.config/hypr/scripts/keybind.sh",
+  "on-click": "rofi -show drun -show-icons -icon-theme 'kora'",
+  "on-click-right": "~/.config/hypr/scripts/keybind.sh"
   },
   
   "custom/powermenu": {
   "format": "󰐥",
   "tooltip-format": "Left-Click: Power Menu\nRight-Click: System Configuration",
   "on-click": "~/.config/hypr/scripts/powermenu.sh",
-  "on-click-right": "~/.config/hypr/scripts/configuration.sh",
+  "on-click-right": "~/.config/hypr/scripts/configuration.sh"
   },
   
   "custom/updates": {
