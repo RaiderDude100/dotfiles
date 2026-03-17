@@ -3,14 +3,13 @@
   --border: 0px;
   --border-color: white;
   --padding: calc(var(--border-radius) / 2);
-  --background-color: black;
+  --background: transparent;
 }
 
 .control-center {
   border: 2px solid;
   border-color: white;
   border-radius: 0px;
-  background-color: black;
 }
 
 .widgets > .widget,
@@ -62,14 +61,12 @@
   border: 2px solid;
   border-color: white;
   border-radius: 0px;
-  background-color: black;
   padding: 10px;
 }
 
 .notification-default-action:hover,
 .notification-action:hover {
   color: white;
-  background: black;
 }
 
 .close-button {

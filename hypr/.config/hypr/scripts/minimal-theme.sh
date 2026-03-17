@@ -2,7 +2,7 @@
 
 gsettings set org.gnome.desktop.interface gtk-theme "Graphite-Dark-compact"
 ln -sf ~/dotfiles/gtk-4/minimal/gtk-4.0 ~/.config/
-echo -e "{\n    "\"include\"": [\n    "\"~/.config/waybar/themes/minimal\""\n    ],\n}" > ~/.config/waybar/config
+echo -e "{\n    "\"include\"": [\n    "\"~/.config/waybar/themes/minimal.jsonc\""\n    ],\n}" > ~/.config/waybar/config.jsonc
 echo "source = ~/.config/hypr/conf/look_feel/minimal.conf" > ~/.config/hypr/conf/look_feel.conf
 echo "@import 'themes/minimal.css';" > ~/.config/waybar/style.css
 echo "@import 'themes/osd-minimal.css';" > ~/.config/waybar/osd.css

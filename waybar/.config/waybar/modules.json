@@ -34,22 +34,19 @@
   },
   
   "custom/launcher": {
-  	"format": "{icon}",
-  	"interval": 0,
-  	"tooltip-format": "Left-Click: App Launcher\nRight-Click: See all keybinds",
-  	"on-click": "rofi -show drun -show-icons -icon-theme 'kora'",
-  	"on-click-right": "~/.config/hypr/scripts/keybind.sh",
-  	"format-icons": ["󰣇"]
+  "format": "󰣇",
+  "tooltip-format": "Left-Click: App Launcher\nRight-Click: See all keybinds",
+  "on-click": "rofi -show drun -show-icons -icon-theme 'Papirus'",
+  "on-click-right": "~/.config/hypr/scripts/keybind.sh",
   },
   
   "custom/powermenu": {
-  	"format": "{icon}",
-  	"interval": 0,
-  	"tooltip-format": "Left-Click: Power Menu\nRight-Click: System Configuration",
-  	"on-click": "~/.config/hypr/scripts/powermenu.sh",
-  	"on-click-right": "~/.config/hypr/scripts/configuration.sh",
-  	"format-icons": ["󰐥"]
+  "format": "󰐥",
+  "tooltip-format": "Left-Click: Power Menu\nRight-Click: System Configuration",
+  "on-click": "~/.config/hypr/scripts/powermenu.sh",
+  "on-click-right": "~/.config/hypr/scripts/configuration.sh",
   },
+  
   "custom/updates": {
   "exec": "~/.config/hypr/scripts/update-checker.sh",
   "interval": 1800,

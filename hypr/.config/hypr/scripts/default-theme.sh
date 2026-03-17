@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
 gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
-ln -sf ~/dotfiles/gtk-4/default/gtk-4.0 ~/.config/
-echo -e "{\n    "\"include\"": [\n    "\"~/.config/waybar/themes/default\""\n    ],\n}" > ~/.config/waybar/config
+ln -sf ~/dotfiles/gtk-4/default/gtk-4.0/ ~/.config/
+echo -e "{\n    "\"include\"": [\n    "\"~/.config/waybar/themes/default.jsonc\""\n    ],\n}" > ~/.config/waybar/config.jsonc
 echo "source = ~/.config/hypr/conf/look_feel/default.conf" > ~/.config/hypr/conf/look_feel.conf
 echo "@import 'themes/default.css';" > ~/.config/waybar/style.css
 echo "@import 'themes/osd-default.css';" > ~/.config/waybar/osd.css
