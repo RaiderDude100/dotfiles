@@ -2,7 +2,6 @@
 set -e
 
 USER_NAME="$(whoami)"
-HOME_DIR="$HOME"
 
 # --- System setup ---
 sudo usermod -aG gamemode "$USER_NAME"
@@ -10,6 +9,7 @@ sudo auto-cpufreq --install
 sudo reflector --latest 10 --sort rate --protocol https --save /etc/pacman.d/mirrorlist
 
 # --- Desktop theming ---
+ln -sf $HOME/dotfiles/gtk-4/default/gtk-4.0/ $HOME/.config/
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
 gsettings set org.gnome.desktop.interface icon-theme "kora"

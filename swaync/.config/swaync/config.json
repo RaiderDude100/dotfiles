@@ -12,7 +12,7 @@
   "control-center-width": 450,
   "control-center-height": -1,
   "fit-to-screen": false,
-  "layer-shell-cover-screen": true,
+  "layer-shell-cover-screen": false,
 
   "layer-shell": true,
   "layer": "overlay",

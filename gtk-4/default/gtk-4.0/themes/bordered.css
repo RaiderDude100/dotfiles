@@ -1,8 +1,8 @@
 @import 'colors.css';
 
 tooltip {
-  margin: 1px;
-    border-width: 0px;
+    margin: 1px;
+    border-width: 2px;
     border-style: solid;
     border-radius: 20px;
     border-color: @accent_color;

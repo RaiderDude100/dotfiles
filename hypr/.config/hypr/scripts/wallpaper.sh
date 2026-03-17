@@ -3,8 +3,11 @@
 # Get the current wallpaper
 wallpaper="$1"
 
+# Output the current wallpaper name to a file
+echo "$wallpaper" > $HOME/.config/hypr/vars/wallpaper
+
 # Use matugen to generate material colors
-matugen -t scheme-content --continue-on-error image $wallpaper
+matugen -t scheme-content --continue-on-error --source-color-index 0 image $wallpaper
 
 # Use wallust to generate terminal colors
 wallust run $wallpaper

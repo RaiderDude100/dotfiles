@@ -1,5 +1,7 @@
-!/usr/bin/env sh
+#!/usr/bin/env sh
+
 gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
+ln -sf ~/dotfiles/gtk-4/default/gtk-4.0/ ~/.config/
 echo -e "{\n    "\"include\"": [\n    "\"~/.config/waybar/themes/default\""\n    ],\n}" > ~/.config/waybar/config
 echo "source = ~/.config/hypr/conf/look_feel/default-borderless.conf" > ~/.config/hypr/conf/look_feel.conf
 echo "@import 'themes/default-borderless.css';" > ~/.config/waybar/style.css

@@ -1,5 +1,5 @@
 backend = 'fastresize'
-threshold = 10
+threshold = 13
 palette = 'dark'
 
 [templates.kitty]
