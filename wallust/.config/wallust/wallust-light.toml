@@ -1,0 +1,10 @@
+backend = 'fastresize'
+threshold = 15
+palette = 'light'
+
+[templates.kitty]
+template = 'kitty-colors.conf'
+target = '~/.config/kitty/colors-wallust.conf'
+[templates.zed]
+template = 'zed.json'
+target = '~/.config/zed/themes/wallust.json'

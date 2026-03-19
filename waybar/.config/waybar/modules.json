@@ -36,7 +36,7 @@
   "custom/launcher": {
   "format": "󰣇",
   "tooltip-format": "Left-Click: App Launcher\nRight-Click: See all keybinds",
-  "on-click": "rofi -show drun -show-icons -icon-theme 'kora'",
+  "on-click": "rofi -show drun -show-icons -icon-theme 'Papirus'",
   "on-click-right": "~/.config/hypr/scripts/keybind.sh"
   },
   

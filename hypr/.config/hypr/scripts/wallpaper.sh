@@ -3,14 +3,21 @@
 # Get the current wallpaper
 wallpaper="$1"
 
+# Get current mode (light or dark)
+mode=$(cat $HOME/.config/hypr/vars/mode)
+
 # Output the current wallpaper name to a file
 echo "$wallpaper" > $HOME/.config/hypr/vars/wallpaper
 
-# Use matugen to generate material colors
-matugen -m dark -t scheme-content --continue-on-error --source-color-index 0 image $wallpaper
+# Use matugen to generate material colors and wallust to generate terminal colors
+if [ "$mode" == "dark" ] ; then
+    matugen -m dark -t scheme-content --continue-on-error --source-color-index 0 image $wallpaper
+    wallust -C $HOME/.config/wallust/wallust-dark.toml run $wallpaper
+elif [ "$mode" == "light" ] ; then
+    matugen -m light -t scheme-content --continue-on-error --source-color-index 0 image $wallpaper
+    wallust -C $HOME/.config/wallust/wallust-light.toml run $wallpaper
+fi
 
-# Use wallust to generate terminal colors
-wallust run $wallpaper
 
 # Use imagemagick to generate different versions of the current wallpaper
 width=$(hyprctl monitors -j | jq 'map(select(.focused)) | .[0].width')

@@ -12,7 +12,7 @@
 		"*": 5
     	},
         "sort-by": "number",
-        "all-outputs": false,
+        "all-outputs": false
     },
     
     "hyprland/window": {
@@ -21,8 +21,8 @@
     	"icon-size": 13,
     	"max-length": 32,
     	"rewrite": {
-    		"(rofi - drun)": "",
-    	},
+    		"(rofi - drun)": ""
+    	}
     },
     "tray": {
         "spacing": 4
@@ -39,7 +39,7 @@
         "tooltip-format": "{ifname}/{essid} via {gwaddr}",
         "format-disconnected": "󰌙 Disconnected",
         "max-length": 12,
-        "on-click": "kitty -e nmtui",
+        "on-click": "kitty -e nmtui"
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
@@ -52,11 +52,11 @@
     },
     "group/trays": {
     	"orientation": "horizontal",
-    	"modules": ["clock","custom/gap","custom/notification","tray"],
+    	"modules": ["clock","custom/gap","custom/notification","tray"]
     },
     "group/menus": {
     	"orientation": "horizontal",
-    	"modules": ["custom/powermenu","custom/gap","custom/launcher"],
-    },
+    	"modules": ["custom/powermenu","custom/gap","custom/launcher"]
+    }
 }
 

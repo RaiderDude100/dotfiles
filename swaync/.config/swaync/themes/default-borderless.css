@@ -67,9 +67,11 @@
   padding: 10px;
 }
 
+.notification-content {
+}
+
 .notification-default-action:hover,
 .notification-action:hover {
-  color: #ffffff;
   background: transparent;
 }
 
