@@ -5,7 +5,6 @@
   --cc-bg: @surface;
   --border: 0;
   --widget-background: @surface;
-
   --padding: calc(var(--border-radius) / 2);
 }
 
@@ -65,7 +64,7 @@
   border-color: @secondary;
   border-radius: 20px;
   background-color: @surface;
-  padding:10px;
+  padding: 10px;
 }
 
 .notification-default-action:hover,
