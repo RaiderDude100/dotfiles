@@ -8,75 +8,75 @@
             "appearance": "dark",
             "style": {
                 // Basic text and background colors
-                "background": "#151914",
+                "background": "#0E140F",
                 "text": "#BCD1F9",
                 "text.muted": "#96A7C7",
                 "text.placeholder": "#8492AE",
                 "text.disabled": "#717D95",
-                "text.accent": "#4A7BBD",
+                "text.accent": "#4779BD",
 
                 // Icon colors - match text hierarchy
                 "icon": "#BCD1F9",
                 "icon.muted": "#96A7C7",
                 "icon.disabled": "#717D95",
                 "icon.placeholder": "#8492AE",
-                "icon.accent": "#4A7BBD",
+                "icon.accent": "#4779BD",
 
                 // Border colors - subtle but visible
                 "border": "#4B5464",
                 "border.variant": "#383F4B",
-                "border.focused": "#4A7BBD",
-                "border.selected": "#4A7BBD",
+                "border.focused": "#4779BD",
+                "border.selected": "#4779BD",
                 "border.transparent": "#00000000",
                 "border.disabled": "#262A32",
 
                 // Surface backgrounds - slightly elevated from main background
-                "surface.background": "#151914",
-                "elevated_surface.background": "#2C302C",
+                "surface.background": "#0E140F",
+                "elevated_surface.background": "#262C27",
 
                 // Interactive element states
                 "element.background": "transparent",
-                "element.hover": "#2A2F36",
-                "element.active": "#1D2C3E",
-                "element.selected": "#182534",
-                "element.disabled": "#212420",
+                "element.hover": "#282E35",
+                "element.active": "#192A3D",
+                "element.selected": "#152333",
+                "element.disabled": "#1A201B",
 
                 // Ghost elements - more subtle interactions
                 "ghost_element.background": "transparent",
-                "ghost_element.hover": "#15171B",
-                "ghost_element.active": "#2A2F36",
-                "ghost_element.selected": "#0E161F",
+                "ghost_element.hover": "#14171A",
+                "ghost_element.active": "#282E35",
+                "ghost_element.selected": "#0D151F",
                 "ghost_element.disabled": "transparent",
 
                 // Drag and drop target
-                "drop_target.background": "#223449",
+                "drop_target.background": "#1D3147",
 
                 // Application frame elements
-                "status_bar.background": "#212420",
-                "title_bar.background": "#151914",
-                "title_bar.inactive_background": "#1C201B",
-                "toolbar.background": "#151914",
+                "status_bar.background": "#1A201B",
+                "title_bar.background": "#0E140F",
+                "title_bar.inactive_background": "#151B16",
+                "toolbar.background": "#0E140F",
 
                 // Side panels
-                "panel.background": "#151914",
-                "panel.focused_border": "#4A7BBD",
+                "panel.background": "#0E140F",
+                "panel.focused_border": "#4779BD",
 
                 // Editor panes
-                "pane.focused_border": "#4A7BBD",
+                "pane.focused_border": "#4779BD",
                 "pane_group.border": "#4B5464",
 
                 // Tab bar and tabs
-                "tab_bar.background": "#212420",
+                "tab_bar.background": "#1A201B",
                 "tab.inactive_background": "transparent",
-                "tab.active_background": "#151914",
+                "tab.active_background": "#0E140F",
 
                 // Main editor area
-                "editor.background": "#151914",
+                "editor.background": "#0E140F",
                 "editor.foreground": "#BCD1F9",
-                "editor.gutter.background": "#151914",
-                "editor.subheader.background": "#212420",
-                "editor.active_line.background": "#15171B",
-                "editor.highlighted_line.background": "#141E25",
+                "editor.gutter.background": "#0E140F",
+                "editor.subheader.background": "#1A201B",
+                "editor.active_line.background": "#14171A",
+                "editor.highlighted_line.background": "#121C24",
                 "editor.line_number": "#717D95",
                 "editor.active_line_number": "#BCD1F9",
                 "editor.invisible": "#5E697D",
@@ -84,35 +84,35 @@
                 "editor.active_wrap_guide": "#717D95",
                 "editor.indent_guide": "#4B5464",
                 "editor.indent_guide_active": "#717D95",
-                "editor.document_highlight.read_background": "#19252E",
-                "editor.document_highlight.write_background": "#1C2521",
-                "editor.document_highlight.bracket_background": "#182534",
+                "editor.document_highlight.read_background": "#16232C",
+                "editor.document_highlight.write_background": "#182220",
+                "editor.document_highlight.bracket_background": "#152333",
 
                 // Integrated terminal
-                "terminal.background": "#151914",
+                "terminal.background": "#0E140F",
                 "terminal.foreground": "#BCD1F9",
                 "terminal.bright_foreground": "#C3D6FA",
                 "terminal.dim_foreground": "#96A7C7",
-                "terminal.ansi.background": "#151914",
-                "terminal.ansi.black": "#292E28",
-                "terminal.ansi.red": "#597A71",
-                "terminal.ansi.green": "#547A8A",
-                "terminal.ansi.yellow": "#4F7AA4",
-                "terminal.ansi.blue": "#4A7BBD",
-                "terminal.ansi.magenta": "#457BD6",
+                "terminal.ansi.background": "#0E140F",
+                "terminal.ansi.black": "#242924",
+                "terminal.ansi.red": "#527571",
+                "terminal.ansi.green": "#4E768A",
+                "terminal.ansi.yellow": "#4B77A3",
+                "terminal.ansi.blue": "#4779BD",
+                "terminal.ansi.magenta": "#447AD6",
                 "terminal.ansi.cyan": "#407BEF",
                 "terminal.ansi.white": "#97B5EF",
                 "terminal.ansi.bright_black": "#6A7EA7",
-                "terminal.ansi.bright_red": "#597A71",
-                "terminal.ansi.bright_green": "#547A8A",
-                "terminal.ansi.bright_yellow": "#4F7AA4",
-                "terminal.ansi.bright_blue": "#4A7BBD",
-                "terminal.ansi.bright_magenta": "#457BD6",
+                "terminal.ansi.bright_red": "#527571",
+                "terminal.ansi.bright_green": "#4E768A",
+                "terminal.ansi.bright_yellow": "#4B77A3",
+                "terminal.ansi.bright_blue": "#4779BD",
+                "terminal.ansi.bright_magenta": "#447AD6",
                 "terminal.ansi.bright_cyan": "#407BEF",
                 "terminal.ansi.bright_white": "#97B5EF",
 
                 // Search functionality
-                "search.match_background": "#283B4A",
+                "search.match_background": "#233847",
 
                 // Scrollbar elements
                 "scrollbar.track.background": "transparent",
@@ -122,49 +122,49 @@
                 "scrollbar.thumb.hover_background": "#8492AE",
 
                 // Status indicators - success, warning, error, info
-                "success": "#547A8A",
-                "success.background": "#1A2528",
-                "success.border": "#547A8A",
+                "success": "#4E768A",
+                "success.background": "#172226",
+                "success.border": "#4E768A",
 
-                "warning": "#4F7AA4",
-                "warning.background": "#19252E",
-                "warning.border": "#4F7AA4",
+                "warning": "#4B77A3",
+                "warning.background": "#16232C",
+                "warning.border": "#4B77A3",
 
-                "error": "#597A71",
-                "error.background": "#1C2521",
-                "error.border": "#597A71",
+                "error": "#527571",
+                "error.background": "#182220",
+                "error.border": "#527571",
 
-                "info": "#4A7BBD",
-                "info.background": "#182534",
-                "info.border": "#4A7BBD",
+                "info": "#4779BD",
+                "info.background": "#152333",
+                "info.border": "#4779BD",
 
                 "hint": "#96A7C7",
-                "hint.background": "#1F2329",
+                "hint.background": "#1E2328",
                 "hint.border": "#96A7C7",
 
                 // Git status colors
-                "created": "#547A8A",
-                "created.background": "#1A2528",
-                "created.border": "#547A8A",
+                "created": "#4E768A",
+                "created.background": "#172226",
+                "created.border": "#4E768A",
 
-                "modified": "#4F7AA4",
-                "modified.background": "#19252E",
-                "modified.border": "#4F7AA4",
+                "modified": "#4B77A3",
+                "modified.background": "#16232C",
+                "modified.border": "#4B77A3",
 
-                "deleted": "#597A71",
-                "deleted.background": "#1C2521",
-                "deleted.border": "#597A71",
+                "deleted": "#527571",
+                "deleted.background": "#182220",
+                "deleted.border": "#527571",
 
-                "renamed": "#4A7BBD",
-                "renamed.background": "#182534",
-                "renamed.border": "#4A7BBD",
+                "renamed": "#4779BD",
+                "renamed.background": "#152333",
+                "renamed.border": "#4779BD",
 
-                "conflict": "#457BD6",
-                "conflict.background": "#16253B",
-                "conflict.border": "#457BD6",
+                "conflict": "#447AD6",
+                "conflict.background": "#14243A",
+                "conflict.border": "#447AD6",
 
                 "ignored": "#8492AE",
-                "ignored.background": "#15171B",
+                "ignored.background": "#14171A",
                 "ignored.border": "#8492AE",
 
                 "hidden": "#717D95",
@@ -172,15 +172,15 @@
                 "hidden.border": "#717D95",
 
                 "predictive": "#8492AE",
-                "predictive.background": "#15171B",
+                "predictive.background": "#14171A",
                 "predictive.border": "#8492AE",
 
                 "unreachable": "#5E697D",
-                "unreachable.background": "#1C201B",
+                "unreachable.background": "#151B16",
                 "unreachable.border": "#5E697D",
 
                 // Link styling
-                "link_text.hover": "#5C88C4",
+                "link_text.hover": "#5986C4",
 
                 // Syntax highlighting - follows standard color assignments
                 "syntax": {
@@ -196,12 +196,12 @@
 
                     // Keywords
                     "keyword": {
-                        "color": "#597A71"
+                        "color": "#527571"
                     },
 
                     // Strings
                     "string": {
-                        "color": "#547A8A"
+                        "color": "#4E768A"
                     },
                     "string.escape": {
                         "color": "#407BEF"
@@ -212,29 +212,29 @@
 
                     // Numbers and constants
                     "number": {
-                        "color": "#4F7AA4"
+                        "color": "#4B77A3"
                     },
                     "constant": {
-                        "color": "#4F7AA4"
+                        "color": "#4B77A3"
                     },
                     "boolean": {
-                        "color": "#457BD6"
+                        "color": "#447AD6"
                     },
 
                     // Functions
                     "function": {
-                        "color": "#4A7BBD"
+                        "color": "#4779BD"
                     },
                     "constructor": {
-                        "color": "#4A7BBD"
+                        "color": "#4779BD"
                     },
 
                     // Types
                     "type": {
-                        "color": "#457BD6"
+                        "color": "#447AD6"
                     },
                     "enum": {
-                        "color": "#457BD6"
+                        "color": "#447AD6"
                     },
 
                     // Variables
@@ -242,15 +242,15 @@
                         "color": "#BCD1F9"
                     },
                     "variable.special": {
-                        "color": "#457BD6"
+                        "color": "#447AD6"
                     },
 
                     // Properties and attributes
                     "property": {
-                        "color": "#4A7BBD"
+                        "color": "#4779BD"
                     },
                     "attribute": {
-                        "color": "#4F7AA4"
+                        "color": "#4B77A3"
                     },
 
                     // Operators - typically cyan (color6)
@@ -271,28 +271,28 @@
 
                     // Tags (HTML/XML)
                     "tag": {
-                        "color": "#597A71"
+                        "color": "#527571"
                     },
 
                     // Labels and identifiers
                     "label": {
-                        "color": "#4A7BBD"
+                        "color": "#4779BD"
                     },
 
                     // Text literals
                     "text.literal": {
-                        "color": "#547A8A"
+                        "color": "#4E768A"
                     },
 
                     // Titles and headings
                     "title": {
-                        "color": "#4A7BBD",
+                        "color": "#4779BD",
                         "font_weight": 700
                     },
 
                     // Links in markdown/docs
                     "link_text": {
-                        "color": "#4A7BBD",
+                        "color": "#4779BD",
                         "font_style": "italic"
                     },
                     "link_uri": {
@@ -312,13 +312,13 @@
                         "color": "#BCD1F9"
                     },
                     "preproc": {
-                        "color": "#597A71"
+                        "color": "#527571"
                     },
                     "primary": {
                         "color": "#BCD1F9"
                     },
                     "variant": {
-                        "color": "#457BD6"
+                        "color": "#447AD6"
                     },
 
                     // Editor hints and diagnostics
@@ -335,24 +335,24 @@
                 // Collaborative editing - different users get different colors
                 "players": [
                     {
-                        "cursor": "#4A7BBD",
-                        "background": "#4A7BBD",
-                        "selection": "#223449"
+                        "cursor": "#4779BD",
+                        "background": "#4779BD",
+                        "selection": "#1D3147"
                     },
                     {
-                        "cursor": "#547A8A",
-                        "background": "#547A8A",
-                        "selection": "#243437"
+                        "cursor": "#4E768A",
+                        "background": "#4E768A",
+                        "selection": "#203035"
                     },
                     {
-                        "cursor": "#4F7AA4",
-                        "background": "#4F7AA4",
-                        "selection": "#233440"
+                        "cursor": "#4B77A3",
+                        "background": "#4B77A3",
+                        "selection": "#1F313E"
                     },
                     {
-                        "cursor": "#457BD6",
-                        "background": "#457BD6",
-                        "selection": "#203452"
+                        "cursor": "#447AD6",
+                        "background": "#447AD6",
+                        "selection": "#1D3250"
                     }
                 ]
             }
