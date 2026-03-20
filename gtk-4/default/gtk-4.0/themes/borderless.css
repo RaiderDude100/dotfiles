@@ -7,6 +7,6 @@ tooltip {
     border-color: @accent_color;
     background-image: none;
     background-color: @view_bg_color;
-    color: @view_fg_color;
+    color: @on_surface;
     font-weight: bold;
 };

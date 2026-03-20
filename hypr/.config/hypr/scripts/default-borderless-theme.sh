@@ -9,7 +9,7 @@ echo "@import 'themes/osd-default-borderless.css';" > ~/.config/waybar/osd.css
 echo "@import 'themes/default-borderless.css';" > ~/.config/swaync/style.css
 echo "@import 'themes/borderless.css';" > ~/.config/gtk-3.0/gtk.css
 echo "@import 'themes/borderless.css';" > ~/.config/gtk-4.0/gtk.css
+echo "include=~/.config/mako/themes/default-borderless" > ~/.config/mako/config
 ~/.config/hypr/scripts/reload.sh
-pkill swaync
 echo "@theme \"~/.config/rofi/themes/rounded-borderless.rasi\"" > ~/.config/rofi/config.rasi
 notify-send -e "Theme changed to Default-Borderless"

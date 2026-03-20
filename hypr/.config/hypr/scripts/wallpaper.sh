@@ -27,6 +27,3 @@ scaled_height=$(echo "$height * 0.5" | bc)
 magick $wallpaper -resize 512x512^ -gravity center -extent 512x512 ~/.cache/profile_squared.jpg
 magick $wallpaper -gravity center -extent $scaled_widthx$scaled_height^ ~/.cache/profile_rectangle.jpg
 magick $wallpaper ~/.cache/wallpaper.jpg
-
-# Send notification when wallpaper is applied
-notify-send -e "Waypaper" "Wallpaper changed to $wallpaper" -a Waypaper

@@ -8,8 +8,8 @@ echo "@import 'themes/minimal.css';" > ~/.config/waybar/style.css
 echo "@import 'themes/osd-minimal.css';" > ~/.config/waybar/osd.css
 echo "@import 'themes/minimal.css';" > ~/.config/swaync/style.css
 echo "@import 'themes/bordered.css';" > ~/.config/gtk-3.0/gtk.css
+echo "include=~/.config/mako/themes/minimal" > ~/.config/mako/config
 ~/.config/hypr/scripts/reload.sh
-pkill swaync
 echo "@theme \"~/.config/rofi/themes/minimal.rasi\"" > ~/.config/rofi/config.rasi
 notify-send -e "Theme changed to Minimal"
 

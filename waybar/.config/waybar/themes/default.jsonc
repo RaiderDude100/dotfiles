@@ -52,7 +52,7 @@
     },
     "group/trays": {
     	"orientation": "horizontal",
-    	"modules": ["clock","custom/gap","custom/notification","tray"]
+    	"modules": ["clock","tray"]
     },
     "group/menus": {
     	"orientation": "horizontal",
