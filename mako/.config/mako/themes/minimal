@@ -1,0 +1,33 @@
+# Position
+anchor=top-right
+
+# Size
+width=300
+height=100
+
+# Margin
+margin=10
+
+# Padding
+padding=10
+
+# Border
+border-size=2
+border-radius=0
+
+# Font
+font=Lilex Nerd Font 13
+
+# Timeout
+default-timeout=5000
+
+# Icons
+icons=1
+
+# Max visible notifications
+max-visible=5
+
+# Colors
+background-color=#000000b3
+text-color=#FFFFFF
+border-color=#FFFFFF
