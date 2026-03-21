@@ -5,6 +5,8 @@ CACHE_PATH="$HOME/.cache"
 VERSION="$HOME/dotfiles/version"
 INSTALLED="$HOME/dotfiles/installed"
 
+sudo pacman -S stow --needed
+
 if [ -d "$FOLDER_PATH" ]; then
   echo "Dotfiles folder exists"
   cd "$CACHE_PATH"
