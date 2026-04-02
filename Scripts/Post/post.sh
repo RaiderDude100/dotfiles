@@ -11,7 +11,7 @@ sudo reflector --latest 10 --sort rate --protocol https --save /etc/pacman.d/mir
 # --- Desktop theming ---
 ln -sf $HOME/dotfiles/gtk-4/default/gtk-4.0/ $HOME/.config/
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3"
+gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Papirus"
 gsettings set org.gnome.desktop.interface cursor-theme "WhiteSur-cursors"
 gsettings set org.gnome.desktop.wm.preferences button-layout ''

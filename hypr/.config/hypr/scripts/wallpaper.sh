@@ -23,7 +23,7 @@ fi
 width=$(hyprctl monitors -j | jq 'map(select(.focused)) | .[0].width')
 scaled_width=$(echo "$width * 0.5" | bc)
 height=$(hyprctl monitors -j | jq 'map(select(.focused)) | .[0].height')
-scaled_height=$(echo "$height * 0.5" | bc)
+scaled_height=$(echo "$height * 1" | bc)
 magick $wallpaper -resize 512x512^ -gravity center -extent 512x512 ~/.cache/profile_squared.jpg
 magick $wallpaper -gravity center -extent $scaled_widthx$scaled_height^ ~/.cache/profile_rectangle.jpg
 magick $wallpaper ~/.cache/wallpaper.jpg

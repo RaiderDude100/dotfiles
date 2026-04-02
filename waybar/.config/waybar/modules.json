@@ -1,19 +1,15 @@
 {
- "custom/notification": {
+  "custom/notification": {
     "tooltip-format": "Left: Notifications\nRight: Do not disturb",
     "format": "{} {icon}",
     "format-icons": {
-      "notification":
-        "<span>󰂚</span>",
+      "notification": "<span>󰂚</span>",
       "none": "󰂚",
-      "dnd-notification":
-        "<span>󰂚</span>",
+      "dnd-notification": "<span>󰂚</span>",
       "dnd-none": "󰂛",
-      "inhibited-notification":
-        "<span>󰂚</span>",
+      "inhibited-notification": "<span>󰂚</span>",
       "inhibited-none": "󰂚",
-      "dnd-inhibited-notification":
-        "<span>󰂚</span>",
+      "dnd-inhibited-notification": "<span>󰂚</span>",
       "dnd-inhibited-none": "󰂛"
     },
     "return-type": "json",
@@ -23,52 +19,54 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   },
-  
   "battery": {
     "format": "{icon} {capacity}%",
     "format-charging": "󰂄 {capacity}%",
     "format-plugged": "󰚥 {capacity}%",
     "format-alt": "{icon} {time}",
     "format-time": "{H}:{m}",
-    "format-icons": ["󰂎","󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
+    "format-icons": [
+      "󰂎",
+      "󰁻",
+      "󰁽",
+      "󰁿",
+      "󰂁",
+      "󰁹"
+    ]
   },
-  
   "custom/launcher": {
-  "format": "󰣇",
-  "tooltip-format": "Left-Click: App Launcher\nRight-Click: See all keybinds",
-  "on-click": "rofi -show drun -show-icons -icon-theme 'Papirus'",
-  "on-click-right": "~/.config/hypr/scripts/keybind.sh"
+    "format": "󰣇",
+    "tooltip-format": "Left-Click: App Launcher\nRight-Click: See all keybinds",
+    "on-click": "rofi -show drun -show-icons -icon-theme 'Papirus'",
+    "on-click-right": "~/.config/hypr/scripts/keybind.sh"
   },
-  
   "custom/powermenu": {
-  "format": "󰐥",
-  "tooltip-format": "Left-Click: Power Menu\nRight-Click: System Configuration",
-  "on-click": "~/.config/hypr/scripts/powermenu.sh",
-  "on-click-right": "~/.config/hypr/scripts/configuration.sh"
+    "format": "󰐥",
+    "tooltip-format": "Left-Click: Power Menu\nRight-Click: System Configuration",
+    "on-click": "~/.config/hypr/scripts/powermenu.sh",
+    "on-click-right": "~/.config/hypr/scripts/configuration.sh"
   },
-  
   "custom/updates": {
-  "exec": "~/.config/hypr/scripts/update-checker.sh",
-  "interval": 1800,
-  "return-type": "json",
-  "on-click": "kitty -e ~/.config/hypr/scripts/updates.sh",
-  "on-click-right": "kitty -e pacseek"
+    "exec": "~/.config/hypr/scripts/update-checker.sh",
+    "interval": 1800,
+    "return-type": "json",
+    "on-click": "kitty -e ~/.config/hypr/scripts/updates.sh",
+    "on-click-right": "kitty -e pacseek"
   },
-
- "custom/sep": {
+  "custom/sep": {
     "format": "|",
     "interval": 0,
     "tooltip": false
- },
+  },
   "custom/gap": {
     "format": " ",
     "interval": 0,
     "tooltip": false
- },
- "cpu": {
+  },
+  "cpu": {
     "format": "CPU: {usage}%"
- },
- "memory": {
+  },
+  "memory": {
     "format": "Mem: {percentage}%"
- },
+  },
 }

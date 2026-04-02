@@ -1,0 +1,28 @@
+{
+  "name": "Matugen VSCodium Theme",
+  "type": "dark",
+  "colors": {
+    "editor.background": "{{colors.background}}",
+    "editor.foreground": "{{colors.on_background}}",
+
+    "activityBar.background": "{{colors.surface}}",
+    "activityBar.foreground": "{{colors.on_surface}}",
+
+    "sideBar.background": "{{colors.surface}}",
+    "sideBar.foreground": "{{colors.on_surface}}",
+
+    "titleBar.activeBackground": "{{colors.primary}}",
+    "titleBar.activeForeground": "{{colors.on_primary}}",
+
+    "statusBar.background": "{{colors.primary}}",
+    "statusBar.foreground": "{{colors.on_primary}}",
+
+    "editorCursor.foreground": "{{colors.primary}}",
+
+    "editor.lineHighlightBackground": "{{colors.surface_variant}}",
+    "editor.selectionBackground": "{{colors.primary_container}}",
+
+    "editorIndentGuide.background": "{{colors.outline}}",
+    "editorIndentGuide.activeBackground": "{{colors.primary}}"
+  }
+}

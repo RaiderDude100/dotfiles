@@ -2,8 +2,8 @@
 anchor=top-right
 
 # Size
-width=300
-height=100
+width=400
+height=150
 
 # Margin
 margin=10
@@ -26,6 +26,10 @@ icons=1
 
 # Max visible notifications
 max-visible=5
+
+# Notification history
+max-history=100
+history=1
 
 # Colors
 background-color=#000000b3
