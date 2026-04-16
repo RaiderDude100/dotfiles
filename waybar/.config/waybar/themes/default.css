@@ -2,14 +2,14 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "Lilex Nerd Font Propo";
-    border-radius: 20px;
-    font-size: 13px;
+    font-size: 15px;
     margin: 2px;
-    border-width: 2px;
+    border-width: 0px;
+    border-radius: 15px;
     font-weight: bold;
 }
 
-tooltip {
+tooltip label {
     background-color: @surface;
     color: @primary;
     font-weight: bold;
@@ -17,7 +17,7 @@ tooltip {
 }
 
 window#waybar {
-    background-color: transparent;
+    background: transparent;
     color: @primary;
     font-weight: bold;
 }
@@ -32,24 +32,40 @@ window#waybar.empty #window {
     padding: 0 5px;
     background-color: @surface;
     color: @primary;
+    transition: all 0.25s ease;
+
 }
 
 #workspaces button:hover {
+    padding: 0 10px;
     background-color: @inverse_primary;
     color: @surface;
 }
 
 #workspaces button.active {
-    background-color: @primary;
-    padding: 0px 10px;
-    border-radius: 25px;
+    background: linear-gradient(150deg, @primary 25%, @tertiary 50%);
+    padding: 0px 15px;
+    border-radius: 15px;
+    color: @surface;
+}
+
+#workspaces button:not(.empty):not(.active) {
+    padding: 0 5px;
+    background-color: @surface;
+    color: @tertiary;
+}
+
+#workspaces button:not(.empty):not(.active):hover {
+    padding: 0 10px;
+    background-color: @tertiary;
     color: @surface;
 }
 
 #workspaces button.urgent {
-    background-color: @error;
+    background-color: @surface;
     color: @on_error;
 }
+
 #window {
     background-color: @surface;
     border-style: solid; 

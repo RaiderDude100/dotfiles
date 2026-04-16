@@ -1,0 +1,72 @@
+@import "colors.css";
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "Lilex Nerd Font Propo";
+    font-size: 15px;
+    color: white;
+    margin: 2px;
+    border-width: 0px;
+    border-radius: 15px;
+    font-weight: bold;
+    background: transparent
+}
+
+#main {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+tooltip label {
+    background-color: @surface;
+    font-weight: bold;
+}
+
+window#waybar {
+    background: transparent;
+    font-weight: bold;
+    border-radius: 20px
+}
+
+#workspaces button {
+    padding: 0 5px;
+    transition: all 0.25s ease
+}
+
+#workspaces button:hover {
+    padding: 0 10px;
+}
+
+#workspaces button.active {
+    background: linear-gradient(150deg, @primary 25%, @tertiary 50%);
+    padding: 0px 15px;
+    border-radius: 15px;
+}
+
+#workspaces button:not(.empty):not(.active) {
+    padding: 0 5px;
+}
+
+#workspaces button:not(.empty):not(.active):hover {
+    padding: 0 10px;
+}
+
+#battery {
+    padding: 0 10px
+}
+
+#network {
+    padding: 0 10px
+}
+
+#pulseaudio {
+    padding: 0 10px
+}
+
+#pulseaudio.muted {
+    color: @error;
+    padding: 0 10px
+}
+
+#battery {
+    padding: 0 10px
+}

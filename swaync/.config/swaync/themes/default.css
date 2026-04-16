@@ -5,12 +5,11 @@
   --cc-bg: @surface;
   --border: 0;
   --widget-background: @surface;
-
   --padding: calc(var(--border-radius) / 2);
 }
 
 .control-center {
-  border: 2px solid;
+  border: 0px solid;
   border-color: @secondary;
   border-radius: 20px;
 }
@@ -61,16 +60,18 @@
 
 
 .notification {
-  border: 2px solid;
+  border: 0px solid;
   border-color: @secondary;
   border-radius: 20px;
   background-color: @surface;
-  padding:10px;
+  padding: 10px;
+}
+
+.notification-content {
 }
 
 .notification-default-action:hover,
 .notification-action:hover {
-  color: #ffffff;
   background: transparent;
 }
 

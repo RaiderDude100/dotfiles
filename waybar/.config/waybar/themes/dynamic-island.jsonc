@@ -1,35 +1,26 @@
 {
   "layer": "top", // Waybar at top layer
-  "spacing": 1, // Gaps between modules (4px)
-  "modules-left": [
-    "group/menus",
-    "hyprland/workspaces",
-    "custom/updates"
-  ],
+  "spacing": 4, // Gaps between modules (4px)
+  "modules-left": [],
   "modules-center": [
-    "hyprland/window"
+    "group/main"
   ],
-  "modules-right": [
-    "pulseaudio",
-    "battery",
-    "network",
-    "group/trays"
-  ],
+  "modules-right": [],
   "include": [
     "~/.config/waybar/modules.json"
   ],
   "hyprland/workspaces": {
     "persistent-workspaces": {
-      "*": 5
+      "*": 1
     },
     "sort-by": "number",
     "all-outputs": true
   },
   "hyprland/window": {
     "format": "{title}",
-    "icon": true,
+    "icon": false,
     "icon-size": 13,
-    "max-length": 32,
+    "max-length": 20,
     "rewrite": {
       "(rofi - drun)": ""
     }
@@ -44,15 +35,15 @@
     "tooltip-format": "{calendar}"
   },
   "network": {
-    "format-wifi": " {essid}",
-    "format-ethernet": "󰈀 Ethernet",
+    "format-wifi": "",
+    "format-ethernet": "󰈀",
     "tooltip-format": "{ifname}/{essid} via {gwaddr}",
-    "format-disconnected": "󰌙 Disconnected",
+    "format-disconnected": "󰌙",
     "max-length": 12,
     "on-click": "kitty -e nmtui"
   },
   "pulseaudio": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}",
     "format-muted": "",
     "format-icons": {
       "headphone": "",
@@ -64,6 +55,19 @@
     },
     "on-click": "pavucontrol"
   },
+  "battery": {
+    "format": "{icon}",
+    "format-charging": "󰂄",
+    "format-plugged": "󰚥",
+    "format-icons": [
+      "󰂎",
+      "󰁻",
+      "󰁽",
+      "󰁿",
+      "󰂁",
+      "󰁹"
+    ]
+  },
   "group/trays": {
     "orientation": "horizontal",
     "modules": [
@@ -71,12 +75,20 @@
       "tray"
     ]
   },
-  "group/menus": {
+  "group/main": {
     "orientation": "horizontal",
     "modules": [
-      "custom/powermenu",
+      "hyprland/workspaces",
       "custom/gap",
-      "custom/launcher"
+      "hyprland/window",
+      "custom/gap",
+      "clock",
+      "custom/gap",
+      "pulseaudio",
+      "battery",
+      "network",
+      "tray",
+      "custom/gap"
     ]
   }
 }

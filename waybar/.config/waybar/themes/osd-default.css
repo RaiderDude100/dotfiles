@@ -6,8 +6,7 @@ window#waybar {
 #custom-osd {
   background-color: @surface;
   color: @primary;
-  border-style: solid;
-  border-width: 2px;
+  border-width: 0px;
   border-color: @secondary;
   border-radius: 20px;
   padding: 10px 18px;

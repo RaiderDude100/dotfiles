@@ -1,8 +1,6 @@
 #!/bin/bash
-
-makoctl reload #Reload Mako
-
-hyprctl reload # Reload hyprland configuration
+hyprctl reload # Reload Hyprland
+makoctl reload # Reload Mako
 
 killall waybar # Kill waybar
 # pkill swaync # Kill swaync

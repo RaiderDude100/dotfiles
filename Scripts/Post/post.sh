@@ -14,6 +14,7 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Papirus"
 gsettings set org.gnome.desktop.interface cursor-theme "WhiteSur-cursors"
+gsettings set org.gnome.desktop.interface font-name "Lilex Nerd Font 13"
 gsettings set org.gnome.desktop.wm.preferences button-layout ''
 
 waypaper --random
@@ -24,7 +25,7 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw enable
 
-yay -Syu
+yay -Syu --noconfirm
 
 tldr --update
 

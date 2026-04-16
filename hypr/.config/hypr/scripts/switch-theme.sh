@@ -1,4 +1,4 @@
-MENU="Default|Default-Borderless|Minimal|Toggle Dark/Light Mode"
+MENU="Default|Minimal|Toggle Dark/Light Mode"
 
 DIALOG_RESULT=$(echo $MENU | rofi -sep "|" -dmenu -i -p "Select Theme" -hide-scrollbar -tokenize -lines 5 -width 50 -padding 50 -disable-history)
 
@@ -12,15 +12,11 @@ if [ "$DIALOG_RESULT" = "Default" ];then
     echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATION.conf" > ~/.config/hypr/conf/animations.conf
     exec ~/.config/hypr/scripts/default-theme.sh
 
-elif [ "$DIALOG_RESULT" = "Default-Borderless" ];then
-    echo "default-borderless" > ~/.config/hypr/vars/theme
-    echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATION.conf" > ~/.config/hypr/conf/animations.conf
-	exec ~/.config/hypr/scripts/default-borderless-theme.sh
-
 elif [ "$DIALOG_RESULT" = "Minimal" ];then
     echo "minimal" > ~/.config/hypr/vars/theme
     echo "source = ~/.config/hypr/conf/animations/none.conf" > ~/.config/hypr/conf/animations.conf
 	exec ~/.config/hypr/scripts/minimal-theme.sh
+
 elif [ "$DIALOG_RESULT" = "Toggle Dark/Light Mode" ];then
 	exec ~/.config/hypr/scripts/toggle-mode.sh
 fi

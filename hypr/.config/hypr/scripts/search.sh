@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Run fzf with bat preview
 FILE=$(fzf --algo=v1 -e --preview 'bat --style=numbers --color=always --line-range :500 {}')

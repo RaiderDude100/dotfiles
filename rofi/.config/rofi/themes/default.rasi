@@ -9,7 +9,7 @@
 window {
     location:       center;
     width:          60%;
-    height:         75%;
+    height:         70%;
     border-radius:  20px;
     background-color:   @surface;
 }
@@ -88,4 +88,3 @@ element-icon {
 element-text {
     text-color: inherit;
 }
-

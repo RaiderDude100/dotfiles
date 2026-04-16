@@ -7,10 +7,9 @@ echo "source = ~/.config/hypr/conf/look_feel/default.conf" > ~/.config/hypr/conf
 echo "@import 'themes/default.css';" > ~/.config/waybar/style.css
 echo "@import 'themes/osd-default.css';" > ~/.config/waybar/osd.css
 echo "@import 'themes/default.css';" > ~/.config/swaync/style.css
-echo "@import 'themes/bordered.css';" > ~/.config/gtk-3.0/gtk.css
-echo "@import 'themes/bordered.css';" > ~/.config/gtk-4.0/gtk.css
-echo "include=~/.config/mako/themes/default-bordered" > ~/.config/mako/config
+echo "@import 'themes/default.css';" > ~/.config/gtk-3.0/gtk.css
+echo "@import 'themes/default.css';" > ~/.config/gtk-4.0/gtk.css
+echo "include=~/.config/mako/themes/default" > ~/.config/mako/config
 ~/.config/hypr/scripts/reload.sh
-echo "@theme \"~/.config/rofi/themes/rounded.rasi\"" > ~/.config/rofi/config.rasi
+echo "@theme \"~/.config/rofi/themes/default.rasi\"" > ~/.config/rofi/config.rasi
 notify-send -e "Theme changed to Default"
-
