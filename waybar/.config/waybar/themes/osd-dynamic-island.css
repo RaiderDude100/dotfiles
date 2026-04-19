@@ -1,12 +1,12 @@
 @import 'colors.css';
 
-window#waybar {
+* {
     background: transparent;
 }
 
 #custom-osd {
-    background: rgba(0, 0, 0, 0.7);
-    color: @primary;
+    background-color: alpha(@source_color, 0.7);
+    color: white;
     border-width: 0px;
     border-color: @secondary;
     border-radius: 20px;
