@@ -1,4 +1,4 @@
-MENU="Default|Minimal|Toggle Dark/Light Mode"
+MENU="Default|Modern|Minimal|Toggle Dark/Light Mode"
 
 DIALOG_RESULT=$(echo $MENU | rofi -sep "|" -dmenu -i -p "Select Theme" -hide-scrollbar -tokenize -lines 5 -width 50 -padding 50 -disable-history)
 
@@ -11,6 +11,11 @@ if [ "$DIALOG_RESULT" = "Default" ];then
     echo "default" > ~/.config/hypr/vars/theme
     echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATION.conf" > ~/.config/hypr/conf/animations.conf
     exec ~/.config/hypr/scripts/default-theme.sh
+
+elif [ "$DIALOG_RESULT" = "Modern" ];then
+    echo "modern" > ~/.config/hypr/vars/theme
+    echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATION.conf" > ~/.config/hypr/conf/animations.conf
+    exec ~/.config/hypr/scripts/modern-theme.sh
 
 elif [ "$DIALOG_RESULT" = "Minimal" ];then
     echo "minimal" > ~/.config/hypr/vars/theme

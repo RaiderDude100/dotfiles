@@ -13,11 +13,11 @@
 }
 
 #main {
-    background-color: alpha(@source_color, 0.7);
+    background-color: alpha(@source_color, 0.5);
 }
 
 tooltip label {
-    background-color: @surface;
+    background-color: alpha(@source_color, 1.0);
     font-weight: bold;
 }
 

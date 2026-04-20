@@ -1,6 +1,6 @@
 #!/bin/sh
 
-MENU="Default|Dynamic Island|Minimal"
+MENU="Default|Modern|Minimal"
 
 DIALOG_RESULT=$(echo $MENU | rofi -sep "|" -dmenu -i -p "Select Waybar Theme" -hide-scrollbar -tokenize -lines 5 -width 50 -padding 50 -disable-history)
 
@@ -13,11 +13,11 @@ if [ "$DIALOG_RESULT" = "Default" ];then
     echo "@import 'themes/default.css';" > ~/.config/waybar/style.css
 	echo "@import 'themes/osd-default.css';" > ~/.config/waybar/osd.css
 
-elif [ "$DIALOG_RESULT" = "Dynamic Island" ];then
-    echo "dynamic-island" > ~/.config/hypr/vars/waybar-theme
-	echo -e "{\n    "\"include\"": [\n    "\"~/.config/waybar/themes/dynamic-island.jsonc\""\n    ],\n}" > ~/.config/waybar/config.jsonc
-    echo "@import 'themes/dynamic-island.css';" > ~/.config/waybar/style.css
-	echo "@import 'themes/osd-dynamic-island.css';" > ~/.config/waybar/osd.css
+elif [ "$DIALOG_RESULT" = "Modern" ];then
+    echo "modern" > ~/.config/hypr/vars/waybar-theme
+	echo -e "{\n    "\"include\"": [\n    "\"~/.config/waybar/themes/modern.jsonc\""\n    ],\n}" > ~/.config/waybar/config.jsonc
+    echo "@import 'themes/modern.css';" > ~/.config/waybar/style.css
+	echo "@import 'themes/osd-modern.css';" > ~/.config/waybar/osd.css
 
 elif [ "$DIALOG_RESULT" = "Minimal" ];then
     echo "minimal" > ~/.config/hypr/vars/waybar-theme

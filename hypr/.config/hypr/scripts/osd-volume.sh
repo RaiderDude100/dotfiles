@@ -17,13 +17,13 @@ else
   TEXT="${VOL}%"
 fi
 
-echo "{\"text\": \"$ICON  $TEXT\"}" > /tmp/waybar-osd.json
+echo "{\"text\": \"$ICON  $TEXT\"}" > $HOME/.cache/waybar-osd.json
 pkill -RTMIN+10 waybar
 
 # Auto-hide
 (
   sleep 1.2
-  echo '{"text": ""}' > /tmp/waybar-osd.json
+  echo '{"text": ""}' > $HOME/.cache/waybar-osd.json
   pkill -RTMIN+10 waybar
 ) &
 

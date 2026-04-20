@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-STATE="/tmp/waybar-osd.json"
+STATE="$HOME/.cache/waybar-osd.json"
 
 if [[ -f "$STATE" ]]; then
   cat "$STATE"

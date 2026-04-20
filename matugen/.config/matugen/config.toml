@@ -56,6 +56,10 @@ output_path = '~/.config/kitty/colors-matugen.conf'
 input_path = '~/.config/matugen/templates/mako'
 output_path = '~/.config/mako/mako-colors'
 
+[templates.mako-transparent-background]
+input_path = '~/.config/matugen/templates/mako-transparent-background'
+output_path = '~/.config/mako/mako-colors-transparent-background'
+
 [templates.quickshell]
 input_path = '~/.config/matugen/templates/quickshell.qml'
 output_path = '~/.config/quickshell/themes/colors.qml'
