@@ -1,6 +1,7 @@
-backend = 'fastresize'
-threshold = 15
-palette = 'light'
+backend = "fastresize"
+palette = "kmeans"
+style = "light"
+check_contrast = true
 
 [templates.kitty]
 template = 'kitty-colors.conf'
@@ -8,3 +9,6 @@ target = '~/.config/kitty/colors-wallust.conf'
 [templates.zed]
 template = 'zed.json'
 target = '~/.config/zed/themes/wallust.json'
+
+[hooks]
+[templated_hooks]
