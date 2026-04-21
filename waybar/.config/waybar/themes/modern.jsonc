@@ -43,17 +43,21 @@
     "on-click": "kitty -e nmtui"
   },
   "pulseaudio": {
-    "format": "{icon}",
-    "format-muted": "",
-    "format-icons": {
-      "headphone": "",
-      "default": [
-        "",
-        "",
-        ""
-      ]
-    },
-    "on-click": "pavucontrol"
+      "format": "{icon}",
+      "format-bluetooth": "{icon}",
+      "format-muted": "",
+      "format-icons": {
+          "headphone": "",
+          "hands-free": "",
+          "headset": "",
+          "phone": "",
+          "phone-muted": "",
+          "portable": "",
+          "car": "",
+          "default": ["","", ""]
+      },
+      "scroll-step": 1,
+      "on-click": "pavucontrol"
   },
   "battery": {
     "format": "{icon}",

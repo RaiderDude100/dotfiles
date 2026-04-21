@@ -54,7 +54,7 @@
   "pulseaudio": {
       "format": "{icon} {volume}%",
       "format-bluetooth": "{icon} {volume}%",
-      "format-muted": "",
+      "format-muted": "",
       "format-icons": {
           "headphone": "",
           "hands-free": "",
@@ -63,7 +63,7 @@
           "phone-muted": "",
           "portable": "",
           "car": "",
-          "default": ["", ""]
+          "default": ["","", ""]
       },
       "scroll-step": 1,
       "on-click": "pavucontrol"
