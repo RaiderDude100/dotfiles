@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
+gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3"
 ln -sf ~/dotfiles/gtk-4/default/gtk-4.0/ ~/.config/
 echo -e "{\n    "\"include\"": [\n    "\"~/.config/waybar/themes/modern.jsonc\""\n    ],\n}" > ~/.config/waybar/config.jsonc
 echo "source = ~/.config/hypr/conf/look_feel/default.conf" > ~/.config/hypr/conf/look_feel.conf

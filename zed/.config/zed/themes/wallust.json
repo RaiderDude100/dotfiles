@@ -8,38 +8,38 @@
             "appearance": "dark",
             "style": {
                 // Basic text and background colors
-                "background": "#0C1110",
+                "background": "#0C110F",
                 "text": "#CBD1D0",
                 "text.muted": "#A2A7A6",
                 "text.placeholder": "#8E9292",
                 "text.disabled": "#7A7D7D",
-                "text.accent": "#4882BA",
+                "text.accent": "#4883BA",
 
                 // Icon colors - match text hierarchy
                 "icon": "#CBD1D0",
                 "icon.muted": "#A2A7A6",
                 "icon.disabled": "#7A7D7D",
                 "icon.placeholder": "#8E9292",
-                "icon.accent": "#4882BA",
+                "icon.accent": "#4883BA",
 
                 // Border colors - subtle but visible
                 "border": "#515453",
                 "border.variant": "#3D3F3E",
-                "border.focused": "#4882BA",
-                "border.selected": "#4882BA",
+                "border.focused": "#4883BA",
+                "border.selected": "#4883BA",
                 "border.transparent": "#00000000",
                 "border.disabled": "#292A2A",
 
                 // Surface backgrounds - slightly elevated from main background
-                "surface.background": "#0C1110",
-                "elevated_surface.background": "#242928",
+                "surface.background": "#0C110F",
+                "elevated_surface.background": "#242927",
 
                 // Interactive element states
                 "element.background": "transparent",
                 "element.hover": "#2B2D2D",
-                "element.active": "#192C3D",
-                "element.selected": "#152533",
-                "element.disabled": "#181D1C",
+                "element.active": "#192C3C",
+                "element.selected": "#152532",
+                "element.disabled": "#181D1B",
 
                 // Ghost elements - more subtle interactions
                 "ghost_element.background": "transparent",
@@ -49,32 +49,32 @@
                 "ghost_element.disabled": "transparent",
 
                 // Drag and drop target
-                "drop_target.background": "#1D3447",
+                "drop_target.background": "#1D3446",
 
                 // Application frame elements
-                "status_bar.background": "#181D1C",
-                "title_bar.background": "#0C1110",
-                "title_bar.inactive_background": "#131817",
-                "toolbar.background": "#0C1110",
+                "status_bar.background": "#181D1B",
+                "title_bar.background": "#0C110F",
+                "title_bar.inactive_background": "#131816",
+                "toolbar.background": "#0C110F",
 
                 // Side panels
-                "panel.background": "#0C1110",
-                "panel.focused_border": "#4882BA",
+                "panel.background": "#0C110F",
+                "panel.focused_border": "#4883BA",
 
                 // Editor panes
-                "pane.focused_border": "#4882BA",
+                "pane.focused_border": "#4883BA",
                 "pane_group.border": "#515453",
 
                 // Tab bar and tabs
-                "tab_bar.background": "#181D1C",
+                "tab_bar.background": "#181D1B",
                 "tab.inactive_background": "transparent",
-                "tab.active_background": "#0C1110",
+                "tab.active_background": "#0C110F",
 
                 // Main editor area
-                "editor.background": "#0C1110",
+                "editor.background": "#0C110F",
                 "editor.foreground": "#CBD1D0",
-                "editor.gutter.background": "#0C1110",
-                "editor.subheader.background": "#181D1C",
+                "editor.gutter.background": "#0C110F",
+                "editor.subheader.background": "#181D1B",
                 "editor.active_line.background": "#161716",
                 "editor.highlighted_line.background": "#181E1E",
                 "editor.line_number": "#7A7D7D",
@@ -86,19 +86,19 @@
                 "editor.indent_guide_active": "#7A7D7D",
                 "editor.document_highlight.read_background": "#1E2626",
                 "editor.document_highlight.write_background": "#131C1F",
-                "editor.document_highlight.bracket_background": "#152533",
+                "editor.document_highlight.bracket_background": "#152532",
 
                 // Integrated terminal
-                "terminal.background": "#0C1110",
+                "terminal.background": "#0C110F",
                 "terminal.foreground": "#CBD1D0",
                 "terminal.bright_foreground": "#D0D6D5",
                 "terminal.dim_foreground": "#A2A7A6",
-                "terminal.ansi.background": "#0C1110",
+                "terminal.ansi.background": "#0C110F",
                 "terminal.ansi.black": "#0E1412",
                 "terminal.ansi.red": "#405E6A",
                 "terminal.ansi.green": "#677359",
                 "terminal.ansi.yellow": "#6C8688",
-                "terminal.ansi.blue": "#4882BA",
+                "terminal.ansi.blue": "#4883BA",
                 "terminal.ansi.magenta": "#6A8F66",
                 "terminal.ansi.cyan": "#93A84A",
                 "terminal.ansi.white": "#CBD1D0",
@@ -106,7 +106,7 @@
                 "terminal.ansi.bright_red": "#405E6A",
                 "terminal.ansi.bright_green": "#677359",
                 "terminal.ansi.bright_yellow": "#6C8688",
-                "terminal.ansi.bright_blue": "#4882BA",
+                "terminal.ansi.bright_blue": "#4883BA",
                 "terminal.ansi.bright_magenta": "#6A8F66",
                 "terminal.ansi.bright_cyan": "#93A84A",
                 "terminal.ansi.bright_white": "#CBD1D0",
@@ -134,9 +134,9 @@
                 "error.background": "#131C1F",
                 "error.border": "#405E6A",
 
-                "info": "#4882BA",
-                "info.background": "#152533",
-                "info.border": "#4882BA",
+                "info": "#4883BA",
+                "info.background": "#152532",
+                "info.border": "#4883BA",
 
                 "hint": "#A2A7A6",
                 "hint.background": "#202222",
@@ -155,9 +155,9 @@
                 "deleted.background": "#131C1F",
                 "deleted.border": "#405E6A",
 
-                "renamed": "#4882BA",
-                "renamed.background": "#152533",
-                "renamed.border": "#4882BA",
+                "renamed": "#4883BA",
+                "renamed.background": "#152532",
+                "renamed.border": "#4883BA",
 
                 "conflict": "#6A8F66",
                 "conflict.background": "#1E281E",
@@ -176,7 +176,7 @@
                 "predictive.border": "#8E9292",
 
                 "unreachable": "#666968",
-                "unreachable.background": "#131817",
+                "unreachable.background": "#131816",
                 "unreachable.border": "#666968",
 
                 // Link styling
@@ -223,10 +223,10 @@
 
                     // Functions
                     "function": {
-                        "color": "#4882BA"
+                        "color": "#4883BA"
                     },
                     "constructor": {
-                        "color": "#4882BA"
+                        "color": "#4883BA"
                     },
 
                     // Types
@@ -247,7 +247,7 @@
 
                     // Properties and attributes
                     "property": {
-                        "color": "#4882BA"
+                        "color": "#4883BA"
                     },
                     "attribute": {
                         "color": "#6C8688"
@@ -276,7 +276,7 @@
 
                     // Labels and identifiers
                     "label": {
-                        "color": "#4882BA"
+                        "color": "#4883BA"
                     },
 
                     // Text literals
@@ -286,13 +286,13 @@
 
                     // Titles and headings
                     "title": {
-                        "color": "#4882BA",
+                        "color": "#4883BA",
                         "font_weight": 700
                     },
 
                     // Links in markdown/docs
                     "link_text": {
-                        "color": "#4882BA",
+                        "color": "#4883BA",
                         "font_style": "italic"
                     },
                     "link_uri": {
@@ -335,9 +335,9 @@
                 // Collaborative editing - different users get different colors
                 "players": [
                     {
-                        "cursor": "#4882BA",
-                        "background": "#4882BA",
-                        "selection": "#1D3447"
+                        "cursor": "#4883BA",
+                        "background": "#4883BA",
+                        "selection": "#1D3446"
                     },
                     {
                         "cursor": "#677359",

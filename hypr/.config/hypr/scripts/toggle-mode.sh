@@ -6,7 +6,7 @@ wallpaper="$(cat $HOME/.config/hypr/vars/wallpaper)"
 if [ "$mode" == "Light" ] ; then
     echo "Dark" > $HOME/.config/hypr/vars/mode
     $HOME/.config/hypr/scripts/wallpaper.sh "$wallpaper"
-    gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
+    gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3"
     gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
     sleep 1
     notify-send 'Switched to Dark mode'
