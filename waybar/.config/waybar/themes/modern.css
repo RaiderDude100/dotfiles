@@ -33,11 +33,12 @@ window#waybar {
 }
 
 #workspaces button:hover {
+    background: alpha(@tertiary, 0.5);
     padding: 0 10px;
 }
 
 #workspaces button.active {
-    background: linear-gradient(150deg, @primary 25%, @tertiary 50%);
+    background: alpha(@primary, 0.5);
     padding: 0px 15px;
     border-radius: 15px;
 }
