@@ -11,6 +11,7 @@ echo "@import 'themes/osd-minimal.css';" > ~/.config/waybar/osd.css
 echo "@import 'themes/minimal.css';" > ~/.config/swaync/style.css
 echo "@import 'themes/minimal.css';" > ~/.config/gtk-3.0/gtk.css
 echo "include=~/.config/mako/themes/minimal" > ~/.config/mako/config
+echo -e "[main]\ninclude='~/.config/fuzzel/themes/minimal.ini'" > ~/.config/fuzzel/fuzzel.ini
 ~/.config/hypr/scripts/reload.sh
 echo "@theme \"~/.config/rofi/themes/minimal.rasi\"" > ~/.config/rofi/config.rasi
 notify-send -e "Theme changed to Minimal"

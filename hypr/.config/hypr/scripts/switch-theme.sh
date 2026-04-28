@@ -1,27 +1,12 @@
-MENU="Default|Modern|Minimal|Toggle Dark/Light Mode"
-
-DIALOG_RESULT=$(echo $MENU | rofi -sep "|" -dmenu -i -p "Select Theme" -hide-scrollbar -tokenize -lines 5 -width 50 -padding 50 -disable-history)
+#!/bin/bash
 
 CURRENT_ANIMATION=$(cat ~/.config/hypr/vars/animations)
+menu=$(printf "Default\nModern\nMinimal\nToggle Dark/Light Mode" | fuzzel --dmenu --lines=4 --width=40)
 
-echo "This result is : $DIALOG_RESULT"
-sleep 1;
+case "$menu" in
+    Default) echo "default" > ~/.config/hypr/vars/theme && echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATION.conf" > ~/.config/hypr/conf/animations.conf && ~/.config/hypr/scripts/default-theme.sh ;;
+    Modern) echo "modern" > ~/.config/hypr/vars/theme && echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATION.conf" > ~/.config/hypr/conf/animations.conf && ~/.config/hypr/scripts/modern-theme.sh ;;
+    Minimal) echo "minimal" > ~/.config/hypr/vars/theme && echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATION.conf" > ~/.config/hypr/conf/animations.conf && ~/.config/hypr/scripts/minimal-theme.sh ;;
+    'Toggle Light/Dark Mode') ~/.config/hypr/scripts/toggle-mode.sh ;;
+esac
 
-if [ "$DIALOG_RESULT" = "Default" ];then
-    echo "default" > ~/.config/hypr/vars/theme
-    echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATION.conf" > ~/.config/hypr/conf/animations.conf
-    exec ~/.config/hypr/scripts/default-theme.sh
-
-elif [ "$DIALOG_RESULT" = "Modern" ];then
-    echo "modern" > ~/.config/hypr/vars/theme
-    echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATION.conf" > ~/.config/hypr/conf/animations.conf
-    exec ~/.config/hypr/scripts/modern-theme.sh
-
-elif [ "$DIALOG_RESULT" = "Minimal" ];then
-    echo "minimal" > ~/.config/hypr/vars/theme
-    echo "source = ~/.config/hypr/conf/animations/none.conf" > ~/.config/hypr/conf/animations.conf
-	exec ~/.config/hypr/scripts/minimal-theme.sh
-
-elif [ "$DIALOG_RESULT" = "Toggle Dark/Light Mode" ];then
-	exec ~/.config/hypr/scripts/toggle-mode.sh
-fi

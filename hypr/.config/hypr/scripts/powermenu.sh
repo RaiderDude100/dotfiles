@@ -1,35 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 
-MENU="Shutdown|Hibernate|Suspend|Restart|Logout|Lock"
-DIALOG_RESULT=$(echo $MENU | rofi -sep "|" -dmenu -i -p "System Configuration" -hide-scrollbar -tokenize -lines 6 -width 50 -padding 50 -disable-history)
+menu=$(printf "Shutdown\nHibernate\nSuspend\nRestart\nLogout\nLock" | fuzzel --dmenu --lines=6 --width=40)
 
-echo "This result is : $DIALOG_RESULT"
-sleep 1;
-
-if [ "$DIALOG_RESULT" = "Hibernate" ];
-then
-	exec systemctl hibernate
-
-elif [ "$DIALOG_RESULT" = "Shutdown" ];
-then
-	exec systemctl poweroff
-
-elif [ "$DIALOG_RESULT" = "Suspend" ];
-then
-	exec systemctl suspend
-    
-elif [ "$DIALOG_RESULT" = "Restart" ];
-then
-	exec systemctl reboot
-
-elif [ "$DIALOG_RESULT" = "Logout" ];
-then
-	exec loginctl terminate-user $USER
-
-elif [ "$DIALOG_RESULT" = "Lock" ];
-then
-	exec hyprlock
-
-fi
-
+case "$menu" in
+    Shutdown) systemctl poweroff ;;
+    Hibernate) systemctl hibernate ;;
+    Suspend) systemctl suspend ;;
+    Restart) systemctl reboot ;;
+    Logout) loginctl terminate-user $USER ;;
+    Lock) hyprlock ;;
+esac
 

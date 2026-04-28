@@ -10,6 +10,7 @@ echo "@import 'themes/default.css';" > ~/.config/swaync/style.css
 echo "@import 'themes/default.css';" > ~/.config/gtk-3.0/gtk.css
 echo "@import 'themes/default.css';" > ~/.config/gtk-4.0/gtk.css
 echo "include=~/.config/mako/themes/default" > ~/.config/mako/config
+echo -e "[main]\ninclude='~/.config/fuzzel/themes/default.ini'" > ~/.config/fuzzel/fuzzel.ini
 ~/.config/hypr/scripts/reload.sh
 echo "@theme \"~/.config/rofi/themes/default.rasi\"" > ~/.config/rofi/config.rasi
 notify-send -e "Theme changed to Default"

@@ -1,43 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 
-MENU="Animation Switcher|Theme Switcher|Hyprlock Theme Switcher|Waybar Theme Switcher|Configure System Powerplan|GTK Settings|Qt5 Settings|Qt6 Settings"
-DIALOG_RESULT=$(echo $MENU | rofi -sep "|" -dmenu -i -p "System Configuration" -hide-scrollbar -tokenize -lines 6 -width 50 -padding 50 -disable-history)
+menu=$(printf "Animation Switcher\nTheming\nConfigure System Powerplan\nGTK Settings\nQt5 Settings\nQt6 Settings" | fuzzel --dmenu --lines=6 --width=40)
 
-echo "This result is : $DIALOG_RESULT"
-sleep 1;
-
-if [ "$DIALOG_RESULT" = "Animation Switcher" ];
-then
-	exec ~/.config/hypr/scripts/animation-switch.sh
-
-elif [ "$DIALOG_RESULT" = "GTK Settings" ];
-then
-	exec nwg-look
-
-elif [ "$DIALOG_RESULT" = "Qt5 Settings" ];
-then
-	exec qt5ct
-
-elif [ "$DIALOG_RESULT" = "Qt6 Settings" ];
-then
-	exec qt6ct
-	
-elif [ "$DIALOG_RESULT" = "Hyprlock Theme Switcher" ];
-then
-	exec ~/.config/hypr/scripts/switch-hyprlock-theme.sh
-	
-elif [ "$DIALOG_RESULT" = "Theme Switcher" ];
-then
-	exec ~/.config/hypr/scripts/switch-theme.sh
-
-elif [ "$DIALOG_RESULT" = "Configure System Powerplan" ];
-then
-	exec ~/.config/hypr/scripts/switch-powerplan.sh
-
-elif [ "$DIALOG_RESULT" = "Waybar Theme Switcher" ];
-then
-	exec ~/.config/hypr/scripts/waybar-theme.sh
- 
-fi
+case "$menu" in
+    'Animation Switcher') ~/.config/hypr/scripts/animation-switch.sh ;;
+    Theming) ~/.config/hypr/scripts/theming.sh ;;
+    'Configure System Powerplan') ~/.config/hypr/scripts/switch-powerplan.sh ;;
+    'GTK Settings') nwg-look ;;
+    'Qt5 Settings') qt5ct ;;
+    'Qt6 Settings') qt6ct ;;
+esac
 
 
