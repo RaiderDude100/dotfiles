@@ -2,9 +2,11 @@
 
 # Get all windows with workspace ID and title using hyprctl
 windows=$(hyprctl clients -j | jq -r '.[] | "\(.workspace.id) — \(.title)"')
+windows_clean="$(printf "%s\n" "$windows" | sed '/^[[:space:]]*$/d')"
+windows_count="$(printf "%s\n" "$windows_clean" | grep -cve '^[[:space:]]*$' || true)"
 
 # Let user select via rofi
-selection=$(echo "$windows" | rofi -dmenu -i -p "Select Window")
+selection=$(echo "$windows" | fuzzel --dmenu -i -p "> " --lines=$windows_count)
 
 # Debugging: Show selected entry
 echo "You selected: $selection"

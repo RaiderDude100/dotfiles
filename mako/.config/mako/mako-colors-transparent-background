@@ -1,8 +1,8 @@
 # Material You colors
 
-background-color=#d5b97880
+background-color=#42576380
 text-color=#ffffff
-border-color=#d5c5a5
+border-color=#c0c8ce
 # Per-mode settings
 
 [mode=do-not-disturb]
