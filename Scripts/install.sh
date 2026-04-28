@@ -14,7 +14,7 @@ sudo ./install-chaotic-aur.sh
 ./install-flatpaks.sh
 
 cd ../..
-stow --override=".*" btop fastfetch gamemode gtk-2 gtk-3 hypr kitty matugen Kvantum nwg-look qt5ct qt6ct rofi swaync vim wallust waybar zed zsh wallpaper waypaper nvim fish kanshi mako
+stow --override=".*" btop fastfetch gamemode gtk-2 gtk-3 hypr kitty matugen Kvantum nwg-look qt5ct qt6ct rofi swaync vim wallust waybar zed zsh wallpaper waypaper nvim fish kanshi mako fuzzel
 
 cd Scripts/Install
 chmod +x install-programs.sh
