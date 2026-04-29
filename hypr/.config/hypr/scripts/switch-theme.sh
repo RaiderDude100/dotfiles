@@ -6,7 +6,7 @@ menu=$(printf "Default\nModern\nMinimal\nToggle Dark/Light Mode" | fuzzel --dmen
 case "$menu" in
     Default) echo "default" > ~/.config/hypr/vars/theme && echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATION.conf" > ~/.config/hypr/conf/animations.conf && ~/.config/hypr/scripts/default-theme.sh ;;
     Modern) echo "modern" > ~/.config/hypr/vars/theme && echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATION.conf" > ~/.config/hypr/conf/animations.conf && ~/.config/hypr/scripts/modern-theme.sh ;;
-    Minimal) echo "minimal" > ~/.config/hypr/vars/theme && echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATION.conf" > ~/.config/hypr/conf/animations.conf && ~/.config/hypr/scripts/minimal-theme.sh ;;
+    Minimal) echo "minimal" > ~/.config/hypr/vars/theme && echo "source = ~/.config/hypr/conf/animations/none.conf" > ~/.config/hypr/conf/animations.conf && ~/.config/hypr/scripts/minimal-theme.sh ;;
     'Toggle Dark/Light Mode') ~/.config/hypr/scripts/toggle-mode.sh ;;
 esac
 
