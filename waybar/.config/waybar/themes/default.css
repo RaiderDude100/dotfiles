@@ -1,7 +1,7 @@
 @import "colors.css";
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "Lilex Nerd Font Propo";
+    font-family: "Space Mono Nerd Font Propo";
     font-size: 15px;
     margin: 2px;
     border-width: 0px;

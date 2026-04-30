@@ -2,7 +2,7 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "Lilex Nerd Font Propo";
+    font-family: "Symbols Nerd Font Mono","Heavydata Nerd Font";
     font-size: 15px;
     color: white;
     margin: 2px;
@@ -44,15 +44,11 @@ window#waybar {
 }
 
 #workspaces button:not(.empty):not(.active) {
-    padding: 0 5px;
+    padding: 0 5px
 }
 
 #workspaces button:not(.empty):not(.active):hover {
     padding: 0 10px;
-}
-
-#battery {
-    padding: 0 10px
 }
 
 #network {
@@ -70,4 +66,8 @@ window#waybar {
 
 #battery {
     padding: 0 10px
+}
+
+#clock {
+    font-size: 20px
 }

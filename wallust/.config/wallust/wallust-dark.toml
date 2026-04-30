@@ -9,6 +9,9 @@ target = '~/.config/kitty/colors-wallust.conf'
 [templates.zed]
 template = 'zed.json'
 target = '~/.config/zed/themes/wallust.json'
+[templates.alacritty]
+template = 'alacritty.toml'
+target = '~/.config/alacritty/colors-wallust.toml'
 
 [hooks]
 [templated_hooks]

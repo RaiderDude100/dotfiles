@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Run fzf with bat preview
-FILE=$(fzf --algo=v1 -e --preview 'bat --style=numbers --color=always --line-range :500 {}')
+FILE=$(fzf --algo=v2 -e +i --style=full --color=dark,pointer:red,border:blue,prompt:red --wrap --preview 'bat --style=header-filename,header-filesize,numbers -f --theme=auto --line-range :500 {}')
 
-# If a file was selected, open it in vim
+# If a file was selected, open it in nvim
 if [[ -n "$FILE" ]]; then
     nvim "$FILE"
 else

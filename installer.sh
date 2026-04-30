@@ -21,7 +21,7 @@ if [ -d "$FOLDER_PATH" ]; then
       mv "$FOLDER_PATH" "$HOME/.dotfiles_backup_pre$(cat "$CACHE_PATH/version")"
       mv "$CACHE_PATH/dotfiles" "$FOLDER_PATH"
       cd "$FOLDER_PATH"
-      stow --override=".*" btop fastfetch gamemode gtk-2 gtk-3 hypr kitty matugen Kvantum nwg-look qt5ct qt6ct rofi swaync vim wallust waybar zed zsh wallpaper waypaper nvim fish kanshi mako fuzzel
+      stow --override=".*" btop fastfetch gamemode gtk-2 gtk-3 hypr kitty matugen Kvantum nwg-look qt5ct qt6ct rofi swaync vim wallust waybar zed zsh wallpaper waypaper nvim fish kanshi mako fuzzel alacritty
     fi
   }
   if [ ! -f "$INSTALLED" ]; then

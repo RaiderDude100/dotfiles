@@ -10,6 +10,12 @@
     "~/.config/waybar/modules.json"
   ],
   "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+        "urgent": "",
+        "default": "",
+        "active": ""
+    },
     "persistent-workspaces": {
       "*": 1
     },
@@ -44,17 +50,19 @@
   },
   "pulseaudio": {
       "format": "{icon}",
-      "format-bluetooth": "{icon}",
-      "format-muted": "",
+      "format-bluetooth": "{icon}󰂯",
+      "format-muted": "󰝟",
       "format-icons": {
-          "headphone": "",
+          "headphone": "󰋋",
+          "headphone-muted": "󰟎",
           "hands-free": "",
-          "headset": "",
-          "phone": "",
-          "phone-muted": "",
-          "portable": "",
+          "headset": "󰋎",
+          "headset-muted": "󰋐",
+          "phone": "󰏲",
+          "phone-muted": "󰷯",
+          "portable": "󰏲",
           "car": "",
-          "default": ["","", ""]
+          "default": ["󰕿","󰖀", "󰕾"]
       },
       "scroll-step": 1,
       "on-click": "pavucontrol"
@@ -83,8 +91,6 @@
     "orientation": "horizontal",
     "modules": [
       "hyprland/workspaces",
-      "custom/gap",
-      "hyprland/window",
       "custom/gap",
       "clock",
       "custom/gap",

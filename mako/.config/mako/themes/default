@@ -16,7 +16,7 @@ border-size=0
 border-radius=15
 
 # Font
-font=Lilex Nerd Font 13
+font=Space Mono Nerd Font 13
 
 # Timeout
 default-timeout=5000

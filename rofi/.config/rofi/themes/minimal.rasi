@@ -1,7 +1,7 @@
 /* ROUNDED THEME FOR ROFI */
 /* Author: Newman Sanchez (https://github.com/newmanls) */
 * {
-    font:   "JetBrainsMono Nerd Font Propo 12";
+    font:   "Space Mono Nerd Font 13";
 
     background-color:   transparent;
     text-color:         white;
