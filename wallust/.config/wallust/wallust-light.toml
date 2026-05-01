@@ -1,5 +1,6 @@
-backend = "fastresize"
+backend = "wal"
 palette = "kmeans"
+color_space = "lab"
 style = "light"
 check_contrast = true
 

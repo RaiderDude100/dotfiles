@@ -17,7 +17,7 @@
         "active": ""
     },
     "persistent-workspaces": {
-      "*": 1
+      "*": 0
     },
     "sort-by": "number",
     "all-outputs": true

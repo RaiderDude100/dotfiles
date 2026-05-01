@@ -1,5 +1,5 @@
 {
     "include": [
-    "~/.config/waybar/themes/default.jsonc"
+    "~/.config/waybar/themes/modern.jsonc"
     ],
 }

@@ -19,6 +19,8 @@
 tooltip label {
     background-color: alpha(@source_color, 1.0);
     font-weight: bold;
+    font-family: "Space Mono Nerd Font";
+    font-size: 13.7
 }
 
 window#waybar {
