@@ -1,5 +1,5 @@
 [general]
-import = ["colors-wallust.toml"]
+import = ["colors-matugen.toml"]
 
 [window]
 padding = { x = 16, y = 16 }

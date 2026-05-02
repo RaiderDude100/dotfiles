@@ -72,3 +72,7 @@ output_path = '~/.config/fuzzel/colors.ini'
 [templates.fuzzel-modern]
 input_path = '~/.config/matugen/templates/fuzzel-modern.ini'
 output_path = '~/.config/fuzzel/colors-modern.ini'
+
+[templates.alacritty]
+input_path = '~/.config/matugen/templates/alacritty.toml'
+output_path = '~/.config/alacritty/colors-matugen.toml'

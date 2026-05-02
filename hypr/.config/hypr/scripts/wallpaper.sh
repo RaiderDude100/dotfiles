@@ -12,10 +12,10 @@ echo "$wallpaper" > $HOME/.config/hypr/vars/wallpaper
 # Use matugen to generate material colors and wallust to generate terminal colors
 if [ "$mode" == "Dark" ] ; then
     matugen -m dark -t scheme-content --continue-on-error --source-color-index 0 image $wallpaper
-    wallust -C $HOME/.config/wallust/wallust-dark.toml run $wallpaper
+    #wallust -s -C $HOME/.config/wallust/wallust-dark.toml run $wallpaper
 elif [ "$mode" == "Light" ] ; then
     matugen -m light -t scheme-content --continue-on-error --source-color-index 0 image $wallpaper
-    wallust -C $HOME/.config/wallust/wallust-light.toml run $wallpaper
+    #wallust -s -C $HOME/.config/wallust/wallust-light.toml run $wallpaper
 fi
 
 # Reload Config
