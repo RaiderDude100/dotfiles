@@ -56,23 +56,19 @@
 			"type": "packages"
 		},
 		{
-			"key": "│             │\u001b[13D{#36}󰇄 desktop",
-			"type": "de"
-		},
-		{
-			"key": "│             │\u001b[13D{#31} terminal",
+			"key": "│             │\u001b[13D{#37} terminal",
 			"type": "terminal"
 		},
 		{
-			"key": "│             │\u001b[13D{#33} wm",
+			"key": "│             │\u001b[13D{#36} wm",
 			"type": "wm"
 		},
 		{
-			"key": "│             │\u001b[13D{#32} shell",
+			"key": "│             │\u001b[13D{#35} shell",
 			"type": "shell"
 		},
 		{
-			"key": "│             │\u001b[13D{#33} cpu",
+			"key": "│             │\u001b[13D{#34} cpu",
 			"type": "cpu",
 			"showPeCoreCount": true
 		},
@@ -81,16 +77,16 @@
 			"type": "gpu"
 		},
 		{
-			"key": "│             │\u001b[13D{#34}󰉉 disk",
+			"key": "│             │\u001b[13D{#32}󰉉 disk",
 			"type": "disk",
 			"folders": "/"
 		},
 		{
-			"key": "│             │\u001b[13D{#35} memory",
+			"key": "│             │\u001b[13D{#31} memory",
 			"type": "memory"
 		},
 		{
-			"key": "│             │\u001b[13D{#36}󰓡 swap",
+			"key": "│             │\u001b[13D{#30}󰓡 swap",
 			"type": "swap"
 		},
 		{
@@ -98,7 +94,7 @@
 			"type": "custom"
 		},
 		{
-			"key": "│             │\u001b[13D{#39} colors",
+			"key": "│             │\u001b[13D{#31} colors",
 			"type": "colors",
 			"symbol": "circle"
 		},
