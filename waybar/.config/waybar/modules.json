@@ -50,8 +50,8 @@
     "exec": "~/.config/hypr/scripts/update-checker.sh",
     "interval": 1800,
     "return-type": "json",
-    "on-click": "kitty -e ~/.config/hypr/scripts/updates.sh",
-    "on-click-right": "kitty -e pacseek"
+    "on-click": "$(cat ~/.config/hypr/vars/terminal) -e ~/.config/hypr/scripts/updates.sh",
+    "on-click-right": "$(cat ~/.config/hypr/vars/terminal) -e pacseek"
   },
   "custom/sep": {
     "format": "|",

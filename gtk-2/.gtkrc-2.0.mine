@@ -1,0 +1,56 @@
+# =====================
+# Matugen GTK2 Template
+# =====================
+
+gtk-color-scheme = "base_color:#17130e\nbg_color:#231f1a\nfg_color:#f2bd73\ntext_color:#f2bd73\nselected_bg_color:#7e5716\nselected_fg_color:#17130e\ntooltip_bg_color:#17130e\ntooltip_fg_color:#f2bd73"
+
+style "default" {
+    xthickness = 1
+    ythickness = 1
+
+    # Text Entry Backgrounds
+    base[NORMAL]      = @base_color
+    base[ACTIVE]      = @selected_bg_color
+    base[INSENSITIVE] = shade(0.9, @base_color)
+    base[SELECTED]    = @selected_bg_color
+    base[HIGHLIGHT]   = @selected_bg_color
+
+    # Window & Button Backgrounds
+    bg[NORMAL]        = @bg_color
+    bg[ACTIVE]        = shade(0.8, @bg_color)
+    bg[INSENSITIVE]   = @bg_color
+    bg[SELECTED]      = @selected_bg_color
+    bg[PRELIGHT]      = shade(1.1, @bg_color)
+
+    # General Text/Label Colors
+    fg[NORMAL]        = @fg_color
+    fg[ACTIVE]        = @selected_fg_color
+    fg[INSENSITIVE]   = shade(0.5, @fg_color)
+    fg[SELECTED]      = @selected_fg_color
+    fg[PRELIGHT]      = @fg_color
+
+    # Input Field Text
+    text[NORMAL]      = @text_color
+    text[ACTIVE]      = @selected_fg_color
+    text[INSENSITIVE] = shade(0.5, @text_color)
+    text[SELECTED]    = @selected_fg_color
+    text[PRELIGHT]    = @text_color
+}
+
+# Specific style for Menus and Thunar Dialogs
+style "menu_and_dialog" {
+    xthickness = 2
+    ythickness = 2
+    
+    # Ensures Thunar delete menus have clear backgrounds
+    bg[NORMAL]   = @bg_color
+    bg[PRELIGHT] = @selected_bg_color
+    fg[PRELIGHT] = @selected_fg_color
+}
+
+# Apply styles
+class "GtkWidget" style "default"
+class "GtkMenu*" style "menu_and_dialog"
+class "GtkMenuItem*" style "menu_and_dialog"
+class "GtkDialog*" style "menu_and_dialog"
+

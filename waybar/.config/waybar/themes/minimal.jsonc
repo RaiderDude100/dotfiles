@@ -10,7 +10,8 @@
     "hyprland/workspaces": {
     	"persistent-workspaces": {
 		"*": 3
-	},
+	    },
+        "separate-outputs": true
     },
     
     "hyprland/window": {
@@ -19,8 +20,8 @@
     	"icon-size": 13,
     	"max-length": 32,
     	"rewrite": {
-    		"(rofi - drun)": "",
-    	},
+    		"(rofi - drun)": ""
+    	}
     },
     "tray": {
         "spacing": 4
@@ -36,7 +37,7 @@
         "format-ethernet": "Ethernet",
         "tooltip-format": "{ifname}/{essid} via {gwaddr}",
         "format-disconnected": "Disconnected",
-        "on-click": "kitty -e nmtui",
+        "on-click": "$(cat ~/.config/hypr/vars/terminal) -e nmtui"
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
@@ -46,6 +47,6 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    },
+    }
 }
 

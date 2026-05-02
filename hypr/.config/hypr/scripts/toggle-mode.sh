@@ -9,6 +9,7 @@ if [ "$mode" == "Light" ] ; then
     $HOME/.config/hypr/scripts/wallpaper.sh "$wallpaper"
     if [ "$theme" == "minimal" ] ; then
         gsettings set org.gnome.desktop.interface gtk-theme "Graphite-Dark-compact"
+        gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
     fi
     sleep 1
     notify-send 'Switched to Dark mode'
@@ -17,6 +18,7 @@ elif [ "$mode" == "Dark" ] ; then
     $HOME/.config/hypr/scripts/wallpaper.sh "$wallpaper"
     if [ "$theme" == "minimal" ] ; then
         gsettings set org.gnome.desktop.interface gtk-theme "Graphite-Light-compact"
+        gsettings set org.gnome.desktop.interface color-scheme "prefer-light"
     fi
     sleep 1
     notify-send 'Switched to Light mode'

@@ -17,6 +17,10 @@ output_path = '~/.config/swaync/themes/colors.css'
 input_path = '~/.config/matugen/templates/hyprland-colors.conf'
 output_path = '~/.config/hypr/colors.conf'
 
+[templates.gtk2]
+input_path = '~/.config/matugen/templates/gtkrc'
+output_path = '~/.gtkrc-2.0.mine'
+
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-3.0/themes/colors.css'

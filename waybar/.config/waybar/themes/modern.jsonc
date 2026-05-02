@@ -20,7 +20,7 @@
       "*": 0
     },
     "sort-by": "number",
-    "all-outputs": true
+    "separate-outputs": true
   },
   "hyprland/window": {
     "format": "{title}",
@@ -46,7 +46,7 @@
     "tooltip-format": "{ifname}/{essid} via {gwaddr}",
     "format-disconnected": "󰌙",
     "max-length": 12,
-    "on-click": "kitty -e nmtui"
+    "on-click": "$(cat ~/.config/hypr/vars/terminal) -e nmtui"
   },
   "pulseaudio": {
       "format": "{icon}",
