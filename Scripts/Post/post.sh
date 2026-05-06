@@ -14,7 +14,7 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3"
 gsettings set org.gnome.desktop.interface icon-theme "Papirus"
 gsettings set org.gnome.desktop.interface cursor-theme "WhiteSur-cursors"
-gsettings set org.gnome.desktop.interface font-name "Lilex Nerd Font 13"
+gsettings set org.gnome.desktop.interface font-name "Space Mono Nerd Font 13.7"
 gsettings set org.gnome.desktop.wm.preferences button-layout ''
 
 waypaper --random

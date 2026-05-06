@@ -23,6 +23,7 @@ if [ -d "$FOLDER_PATH" ]; then
       cd "$FOLDER_PATH"
       stow --override=".*" btop fastfetch gamemode gtk-2 gtk-3 hypr kitty matugen Kvantum nwg-look qt5ct qt6ct rofi swaync vim wallust waybar zed zsh wallpaper waypaper nvim fish kanshi mako fuzzel alacritty
       touch installed
+      waypaper --random
     fi
   }
   if [ ! -f "$INSTALLED" ]; then
@@ -39,5 +40,4 @@ else
   ./install.sh
 fi
 
-echo "Please restart for effects to take place"
 exit 0
