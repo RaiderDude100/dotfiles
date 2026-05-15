@@ -21,7 +21,7 @@
 		},
 		{
 			// draw borders first to make colors of left and right border consistant
-			"key": "│             │\u001b[13D{#31} user",
+			"key": "│             │\u001b[13D{#36} user",
 			"type": "title",
 			"format": "{1}"
 		},
@@ -30,25 +30,25 @@
 			"type": "custom"
 		},
 		{
-			"key": "│             │\u001b[13D{#32}󰒋 hostname",
+			"key": "│             │\u001b[13D{#36}󰒋 hostname",
 			"type": "title",
 			"format": "{2}"
 		},
 		{
-			"key": "│             │\u001b[13D{#33}󰅐 uptime",
+			"key": "│             │\u001b[13D{#36}󰅐 uptime",
 			"type": "uptime"
 		},
 		{
                         "type": "command",
-                        "key": "│             │\u001b[13D{#31}󰃭 OS Age",
+                        "key": "│             │\u001b[13D{#36}󰃭 OS Age",
                         "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install));            days_difference=$((time_progression / 86400)); echo $days_difference days"
                 },
 		{
-			"key": "│             │\u001b[13D{#34}󰟾 distro",
+			"key": "│             │\u001b[13D{#36}󰟾 distro",
 			"type": "os"
 		},
 		{
-			"key": "│             │\u001b[13D{#35} kernel",
+			"key": "│             │\u001b[13D{#36} kernel",
 			"type": "kernel"
 		},
 		{
@@ -56,7 +56,7 @@
 			"type": "packages"
 		},
 		{
-			"key": "│             │\u001b[13D{#37} terminal",
+			"key": "│             │\u001b[13D{#36} terminal",
 			"type": "terminal"
 		},
 		{
@@ -64,29 +64,29 @@
 			"type": "wm"
 		},
 		{
-			"key": "│             │\u001b[13D{#35} shell",
+			"key": "│             │\u001b[13D{#36} shell",
 			"type": "shell"
 		},
 		{
-			"key": "│             │\u001b[13D{#34} cpu",
+			"key": "│             │\u001b[13D{#36} cpu",
 			"type": "cpu",
 			"showPeCoreCount": true
 		},
         {
-			"key": "│             │\u001b[13D{#33}󰢮 gpu",
+			"key": "│             │\u001b[13D{#36}󰢮 gpu",
 			"type": "gpu"
 		},
 		{
-			"key": "│             │\u001b[13D{#32}󰉉 disk",
+			"key": "│             │\u001b[13D{#36}󰉉 disk",
 			"type": "disk",
 			"folders": "/"
 		},
 		{
-			"key": "│             │\u001b[13D{#31} memory",
+			"key": "│             │\u001b[13D{#36} memory",
 			"type": "memory"
 		},
 		{
-			"key": "│             │\u001b[13D{#30}󰓡 swap",
+			"key": "│             │\u001b[13D{#36}󰓡 swap",
 			"type": "swap"
 		},
 		{
@@ -94,7 +94,7 @@
 			"type": "custom"
 		},
 		{
-			"key": "│             │\u001b[13D{#31} colors",
+			"key": "│             │\u001b[13D{#36} colors",
 			"type": "colors",
 			"symbol": "circle"
 		},

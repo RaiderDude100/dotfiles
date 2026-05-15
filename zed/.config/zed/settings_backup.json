@@ -33,7 +33,8 @@
     "file_icons": true
   },
   "title_bar": {
-    "show_menus": false
+    "show_menus": false,
+    "show_branch_icon": false
   },
   "prettier": {
     "allowed": false

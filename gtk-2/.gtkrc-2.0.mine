@@ -2,7 +2,7 @@
 # Matugen GTK2 Template
 # =====================
 
-gtk-color-scheme = "base_color:#151312\nbg_color:#211f1f\nfg_color:#d7c2bc\ntext_color:#d7c2bc\nselected_bg_color:#6b5b56\nselected_fg_color:#151312\ntooltip_bg_color:#151312\ntooltip_fg_color:#d7c2bc"
+gtk-color-scheme = "base_color:#11131b\nbg_color:#1d1f27\nfg_color:#b4c5ff\ntext_color:#b4c5ff\nselected_bg_color:#0153da\nselected_fg_color:#11131b\ntooltip_bg_color:#11131b\ntooltip_fg_color:#b4c5ff"
 
 style "default" {
     xthickness = 1
