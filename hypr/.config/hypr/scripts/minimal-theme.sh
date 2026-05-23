@@ -5,7 +5,7 @@ mode=$(cat ~/.config/hypr/vars/mode)
 gsettings set org.gnome.desktop.interface gtk-theme "Graphite-$mode-compact"
 ln -sf ~/dotfiles/gtk-4/minimal/gtk-4.0 ~/.config/
 echo -e "{\n    "\"include\"": [\n    "\"~/.config/waybar/themes/minimal.jsonc\""\n    ],\n}" > ~/.config/waybar/config.jsonc
-echo "source = ~/.config/hypr/conf/look_feel/minimal.conf" > ~/.config/hypr/conf/look_feel.conf
+echo 'require("conf.look_feel.minimal")' > ~/.config/hypr/conf/look_feel.lua
 echo "@import 'themes/minimal.css';" > ~/.config/waybar/style.css
 echo "@import 'themes/osd-minimal.css';" > ~/.config/waybar/osd.css
 echo "@import 'themes/minimal.css';" > ~/.config/swaync/style.css

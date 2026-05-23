@@ -13,7 +13,11 @@ output_path = '~/.config/waybar/themes/colors.css'
 input_path = '~/.config/matugen/templates/colors.css'
 output_path = '~/.config/swaync/themes/colors.css'
 
-[templates.hyprland]
+[templates.hyprland-lua]
+input_path = '~/.config/matugen/templates/hyprland-colors.lua'
+output_path = '~/.config/hypr/colors.lua'
+
+[templates.hyprland-conf]
 input_path = '~/.config/matugen/templates/hyprland-colors.conf'
 output_path = '~/.config/hypr/colors.conf'
 

@@ -13,6 +13,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"  # or switch to powerlevel10k for max sp
 plugins=(
   git
   fast-syntax-highlighting
+  zsh-autosuggestions
 )
 
 # -------- Improve startup speed --------
@@ -30,7 +31,6 @@ COMPLETION_WAITING_DOTS="true"
 
 # -------- User configuration --------
 alias ls="eza --icons -lh"
-alias mysql="~/.config/hypr/scripts/mysql.sh"
 alias cp="rsync -a --info=progress2"
 
 # zoxide (fast)
@@ -39,8 +39,8 @@ eval "$(zoxide init zsh --cmd cd)"
 # PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 
-export EDITOR="vim"
-export MANPAGER="vim -M +MANPAGER --not-a-term -"
+export EDITOR="nvim"
+export MANPAGER="nvim -M +MANPAGER --not-a-term -"
 
 # Load Oh My Zsh last
 source $ZSH/oh-my-zsh.sh

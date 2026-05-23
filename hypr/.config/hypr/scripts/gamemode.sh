@@ -6,8 +6,8 @@ CURRENT_ANIMATIONS=$(cat ~/.config/hypr/vars/animations)
 if [ "$HYPRGAMEMODE" == "off" ] ; then
     pkill waybar &
     pkill hypridle &
-    echo "source = ~/.config/hypr/conf/look_feel/minimal.conf" > ~/.config/hypr/conf/look_feel.conf
-    echo "source = ~/.config/hypr/conf/animations/none.conf" > ~/.config/hypr/conf/animations.conf
+    echo 'require("look_feel.none")' > ~/.config/hypr/conf/look_feel.lua
+    echo 'require("animations.none")' > ~/.config/hypr/conf/animations.lua
     echo "on" > ~/.config/hypr/vars/gamemode
     notify-send -e "Gamemode Activated"
     exit
@@ -16,8 +16,8 @@ fi
     waybar &
     waybar -c ~/.config/waybar/osd.jsonc -s ~/.config/waybar/osd.css &
     echo "off" > ~/.config/hypr/vars/gamemode
-    echo "source = ~/.config/hypr/conf/look_feel/$CURRENT_THEME.conf" > ~/.config/hypr/conf/look_feel.conf
-    echo "source = ~/.config/hypr/conf/animations/$CURRENT_ANIMATIONS.conf" > ~/.config/hypr/conf/animations.conf
+    echo 'require("look_feel.$CURRENT_THEME")' > ~/.config/hypr/conf/look_feel.lua
+    echo 'require("animations.$CURRENT_ANIMATIONS")' > ~/.config/hypr/conf/animations.lua
     notify-send -e "Gamemode Deactivated"
     hyprctl reload
 exit

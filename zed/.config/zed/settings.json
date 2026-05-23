@@ -64,7 +64,7 @@
     "metrics": false
   },
   "ui_font_size": 16,
-  "theme": "Matugen Dark",
+  "theme": "Matugen",
   "lsp": {
     "basedpyright": {
       "settings": {
