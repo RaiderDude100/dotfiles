@@ -5,10 +5,12 @@ hl.config({
         kb_model     = "",
         kb_options   = "",
         kb_rules     = "",
-
         follow_mouse = 1,
-
         sensitivity  = 0, -- -1.0 - 1.0, 0 means no modification.
+        numlock_by_default = true,
+        repeat_rate = 30,
+        repeat_delay = 200,
+        accel_profile = flat,
     },
 })
 

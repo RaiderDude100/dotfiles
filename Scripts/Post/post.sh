@@ -35,15 +35,25 @@ touch installed
 echo "Choose shell"
 echo "1 for zsh"
 echo "2 for fish"
-read -rp "Enter your choice: " choice
+read -rp "Enter your choice: " choice_shell
 
-if [ $choice == "1" ] ; then
+if [ $choice_shell == "1" ] ; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-elif [ $choice == "2" ] ; then
+elif [ $choice_shell == "2" ] ; then
     sudo chsh $USER_NAME -s /usr/bin/fish
+fi
+
+
+echo "Do you want to install Cloudflare warp? (recommended)"
+read -rp "Enter yes to install: " choice_warp
+
+if [ $choice_shell == "yes" || $choice_shell == "YES" || $choice_shell == "Yes" ]; then
+    sudo systemctl enable --now warp-svc.service
+    warp-cli registration new
+    warp-cli connect
 fi
 
 echo "Post installation scripts finished. Rebooting..."

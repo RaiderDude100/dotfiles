@@ -7,10 +7,10 @@ decorations = "None"
 opacity = 0.6
 
 [font]
-normal = { family = "Space Mono Nerd Font Mono" }
-bold = { family = "Space Mono Nerd Font Mono" }
-italic = { family = "Space Mono Nerd Font Mono" }
-bold_italic = { family = "Space Mono Nerd Font Mono" }
+normal = { family = "Geist Mono Nerd Font Mono" }
+bold = { family = "Geist Mono Nerd Font Mono" }
+italic = { family = "Geist Mono Nerd Font Mono" }
+bold_italic = { family = "Geist Mono Nerd Font Mono" }
 size = 13.7
 
 [cursor]
