@@ -105,7 +105,14 @@ window#waybar.empty #window {
 }
 
 
-#center {
+#window {
+    background-color: @surface;
+    border-style: solid;
+    border-color: @secondary;
+    padding: 0 10px;
+}
+
+#tray {
     background-color: @surface;
     border-style: solid;
     border-color: @secondary;
