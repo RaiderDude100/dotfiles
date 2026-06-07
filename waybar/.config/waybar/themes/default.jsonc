@@ -7,13 +7,13 @@
     "custom/updates"
   ],
   "modules-center": [
-    "hyprland/window"
+    "group/center"
   ],
   "modules-right": [
     "pulseaudio",
     "battery",
     "network",
-    "group/trays"
+    "clock"
   ],
   "include": [
     "~/.config/waybar/modules.json"
@@ -70,19 +70,19 @@
       "scroll-step": 1,
       "on-click": "pavucontrol"
   },
-  "group/trays": {
-    "orientation": "horizontal",
-    "modules": [
-      "clock",
-      "tray"
-    ]
-  },
   "group/menus": {
     "orientation": "horizontal",
     "modules": [
       "custom/powermenu",
       "custom/gap",
       "custom/launcher"
+    ]
+  },
+  "group/center": {
+    "orientation": "horizontal",
+    "modules": [
+      "hyprland/window",
+      "tray"
     ]
   }
 }

@@ -66,13 +66,6 @@ window#waybar.empty #window {
     color: @on_error;
 }
 
-#window {
-    background-color: @surface;
-    border-style: solid; 
-    border-color: @secondary;
-    padding: 0 10px;
-}
-
 #battery {
     background-color: @surface;
     padding: 0 10px;
@@ -86,6 +79,7 @@ window#waybar.empty #window {
 
 #clock {
     background-color: @surface;
+    padding: 0 10px;
 }
 
 #network {
@@ -111,7 +105,7 @@ window#waybar.empty #window {
 }
 
 
-#trays {
+#center {
     background-color: @surface;
     border-style: solid;
     border-color: @secondary;
