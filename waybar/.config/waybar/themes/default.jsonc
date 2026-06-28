@@ -7,6 +7,7 @@
     "custom/updates"
   ],
   "modules-center": [
+    "mpris",
     "hyprland/window",
     "tray"
   ],
@@ -51,6 +52,19 @@
     "format-disconnected": "󰌙 Disconnected",
     "max-length": 12,
     "on-click": "$(cat ~/.config/hypr/vars/terminal) -e nmtui"
+  },
+  "mpris": {
+	"format": "{player_icon} {title}",
+	"format-paused": "{status_icon} {title}",
+	"player-icons": {
+		"default": "▶"
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+    "dynamic-len": 20,
+    "tooltip-format": "Artist: {artist}\nTitle: {title}\nAlbum: {album}\nLength: {length}",
+    "ignored-players": ["firefox","chromium","brave-browser","helium-browser"]
   },
   "pulseaudio": {
       "format": "{icon} {volume}%",

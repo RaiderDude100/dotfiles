@@ -50,11 +50,7 @@
     "diagnostics": "all"
   },
   "buffer_line_height": "comfortable",
-  "icon_theme": {
-    "mode": "system",
-    "light": "Zed (Default)",
-    "dark": "Zed (Default)"
-  },
+  "icon_theme": "Zed (Default)",
   "buffer_font_family": ".ZedMono",
   "project_panel": {
     "dock": "right"

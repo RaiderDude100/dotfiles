@@ -6,7 +6,7 @@ hl.config({
         font_family = "Geist Mono Nerd Font",
         focus_on_activate = true,
         exit_window_retains_fullscreen = false,
-        initial_workspace_tracking = 2
+        initial_workspace_tracking = 1
     },
     render = {
         new_render_scheduling = false,

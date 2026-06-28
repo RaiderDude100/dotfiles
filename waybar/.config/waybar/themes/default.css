@@ -71,6 +71,16 @@ window#waybar.empty #window {
     padding: 0 10px;
 }
 
+#mpris {
+    background-color: @surface;
+    padding: 0 10px;
+}
+
+#cava {
+    background-color: @surface;
+    padding: 0 10px;
+}
+
 #workspaces {
     background-color: @surface;
     border-style: solid;

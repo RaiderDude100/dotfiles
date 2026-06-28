@@ -15,6 +15,7 @@ else
     makepkg -si
     echo "yay installed"
 fi
+rm -rf $HOME/dotfiles/Scripts/Install/yay
 
 exit 0
 
