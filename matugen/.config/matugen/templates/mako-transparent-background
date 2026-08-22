@@ -1,7 +1,7 @@
 # Material You colors
 
-background-color={{colors.source_color.default.hex}}80
-text-color=#ffffff
+background-color=#00000033
+text-color=#ffffffff
 border-color={{colors.secondary.default.hex}}
 # Per-mode settings
 

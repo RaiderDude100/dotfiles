@@ -13,13 +13,13 @@
 }
 
 #main {
-    background-color: alpha(@source_color, 0.5);
+    background-color: alpha(#000000, 0.2);
 }
 
 tooltip label {
-    background-color: alpha(@source_color, 1.0);
+    background-color: alpha(#000000, 0.2);
     font-weight: bold;
-    font-family: "Space Mono Nerd Font";
+    font-family: "JetBrains Mono Nerd Font";
     font-size: 13.7
 }
 
@@ -35,12 +35,12 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    background: alpha(@tertiary, 0.5);
+    background: alpha(@tertiary, 0.2);
     padding: 0 10px;
 }
 
 #workspaces button.active {
-    background: alpha(@primary, 0.5);
+    background: alpha(@primary, 0.2);
     padding: 0px 15px;
     border-radius: 15px;
 }

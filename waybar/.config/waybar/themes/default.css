@@ -1,7 +1,7 @@
 @import "colors.css";
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "Geist Mono Nerd Font Propo";
+    font-family: "JetBrains Mono Nerd Font Propo";
     font-size: 15px;
     margin: 2px;
     border-width: 0px;
@@ -38,12 +38,12 @@ window#waybar.empty #window {
 
 #workspaces button:hover {
     padding: 0 10px;
-    background-color: @inverse_primary;
+    background: radial-gradient(@inverse_primary 25%, @surface 100%);
     color: @surface;
 }
 
 #workspaces button.active {
-    background: linear-gradient(150deg, @primary 25%, @tertiary 50%);
+    background: radial-gradient(@primary 25%, @surface 100%);
     padding: 0px 15px;
     border-radius: 15px;
     color: @surface;

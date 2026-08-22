@@ -16,7 +16,7 @@ border-size=2
 border-radius=0
 
 # Font
-font=Geist Mono Nerd Font 13.7
+font=JetBrains Mono Nerd Font 14
 
 # Timeout
 default-timeout=5000
